@@ -1,0 +1,20 @@
+# Fdb version 3
+["pdflatex"] 1665405007 "/home/leonardo/Desktop/Workspace/2uni/LabFisica2/Lab1/FirstReport.tex" "FirstReport.pdf" "FirstReport" 1665405007
+  "/home/leonardo/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1665405006 10780968 76ac1c5aa7ba45ca724a9b62e3b4cf5d ""
+  "/home/leonardo/.miktex/texmfs/install/tex/latex/anysize/anysize.sty" 1664797913 2845 4794e03732d03b84e00d88467429dcc1 ""
+  "/home/leonardo/.miktex/texmfs/install/tex/latex/setspace/setspace.sty" 1664797668 22913 a27d7908fc6f0385466454a966a316eb ""
+  "/home/leonardo/Desktop/Workspace/2uni/LabFisica2/Lab1/FirstReport.tex" 1665403177 492 83001ce582f65e98be1c2535e34fc995 ""
+  "/usr/local/share/miktex-texmf/tex/latex/amsmath/amsbsy.sty" 1664787521 2222 78b930a5a6e3dc2ac69b78c2057b94d7 ""
+  "/usr/local/share/miktex-texmf/tex/latex/amsmath/amsgen.sty" 1664787521 4173 c989ee3ced31418e3593916ab26c793a ""
+  "/usr/local/share/miktex-texmf/tex/latex/amsmath/amsmath.sty" 1664787521 88393 1adf6fa3f245270d06e3d4f8910f7fc5 ""
+  "/usr/local/share/miktex-texmf/tex/latex/amsmath/amsopn.sty" 1664787521 4474 f04cd1cc7bd76eb033e6fb12eb6a0d77 ""
+  "/usr/local/share/miktex-texmf/tex/latex/amsmath/amstext.sty" 1664787521 2444 70065bddd85997dc1fd0bb7ae634e5fa ""
+  "/usr/local/share/miktex-texmf/tex/latex/base/article.cls" 1664787676 20144 7555b7429d80bef287ebb82117811acc ""
+  "/usr/local/share/miktex-texmf/tex/latex/base/size10.clo" 1664787677 8448 e0391042ca0932ede1098ae14ada60ba ""
+  "/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdftex.def" 1665404915 30426 b4bd1ea7df6c51902df8edf551809fb7 ""
+  "FirstReport.aux" 1665405007 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "FirstReport.tex" 1665403177 492 83001ce582f65e98be1c2535e34fc995 ""
+  (generated)
+  "FirstReport.aux"
+  "FirstReport.log"
+  "FirstReport.pdf"
