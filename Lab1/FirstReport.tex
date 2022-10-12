@@ -115,10 +115,15 @@
     Questa misurazione coincide sperimentalmente con la tensione calcolata tramite il teorema di Millman.\par
 
     %risulati sperimentali
+
+    \newpage
+
     \section{Dati sperimentali}
     \begin{center}
         Primo esperimento: \par
     \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textit{Test} & \textit{Primo resistore} & \textit{Secondo resistore} & \textit{Tensione di lato} \\
         \hline
         Test 1 & $R_1 =1k\Omega$ & $R_2=1k\Omega$ & $V=3,020V$\\
         \hline
@@ -138,15 +143,17 @@
     
     \begin{center}
         Secondo esperimento: \par
-    \begin{tabular}{|c|c|}
+    \begin{tabular}{|c|c|c|}
         \hline
-        $I_{8V}$ & $4,782 mA$\\
+        \textit{Ramo cortocircuitato} & \textit{Tensione} & \textit{Corrente} \\
         \hline
-        $I_{5V}$ & $1,695 mA$\\
+        Primo ramo & $V_1 = 8V$ & $I_1 = 4,782 mA$\\
         \hline
-        $I_{-3V}$ & $-6,276 mA$\\
+        Secondo ramo & $V_2 = 5V$ & $I_2 = 1,695 mA$\\
         \hline
-        V di lato & $3,198 V$\\
+        Terzo ramo & $V_3 = -3V$ & $I_3 = 6,276 mA$\\
+        \hline
+        & V di lato & $3,198 V$\\
         \hline
     
     \end{tabular}
@@ -158,7 +165,7 @@
     \section{Elaborazione dati}
     Primo esperimento, $V_s = 6V$:
     \begin{align*}
-        I_s = \frac{V_s}{R_eq}  \hspace{2cm}   & V_eq = R_1 + R_2   \hspace{2cm} & v_{R_2} = \frac{V_s}{V_eq} \cdot R_2 \\
+        I_s = \frac{V_s}{R_eq}  \hspace{2cm}   & v_{R_2} = \frac{V_s}{V_eq} \cdot R_2  \hspace{2cm} &  V_eq = R_1 + R_2 \\
         & V_{Test1} = \frac{6V}{1k\Omega + 1k\Omega} \cdot 1k\Omega = 3V \\
         & V_{Test2} = \frac{6V}{1k\Omega + 500\Omega} \cdot 500\Omega = 2V \\
         & V_{Test3} = \frac{6V}{10k\Omega + 10k\Omega} \cdot 10k\Omega = 3V \\
