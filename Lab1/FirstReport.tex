@@ -23,6 +23,8 @@
 \usepackage{setspace}
 \usepackage{anysize}
 \usepackage{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
 %c'è 1 inch di margine a destra e sinistra
 %\geometry{margin = 1.25 in}
 
@@ -88,6 +90,8 @@
         \item un multimetro collegato in parallelo alla seconda resistenza
     \end{itemize}
     %INSERISCI FIGURA DELLO SCHEMATICO DEL CIRCUITO + FOTO REALE
+    %\includegraphics{circuito1.png}
+    %provo a mettere la foto
     Si è successivamente replicato lo stesso circuito su una \textbf{Breadboard} utilizzando due resistori da
     $1k\Omega$, connettori da banco per collegare la Breadboard ai morsetti serrafilo connessi al generatore
     tramite \textbf{connettori a banana}. \par
@@ -100,6 +104,7 @@
     I risultati più discostati dai precedenti sono sicuramente stati rilevati nelle ultime due misurazioni in cui sono state utilizzati
     resistori con resistenze ben più alte rispetto alle precedenti.\par
     \par
+    %\includegraphics{circuito2.png}
     Nella seconda parte di questa esperienza di laboratorio è stato illustrato dal punto di vista teorico
     un teorema derivante dalle leggi di \textbf{Kirchhoff}, ossia il teorema di \textbf{Jacob Millman}.
     Dopo un'illustrazione teorica, è stato esposto un secondo esercizio in cui si può verificare sperimentalmente il teorema di Millman:
@@ -135,11 +140,11 @@
         Secondo esperimento: \par
     \begin{tabular}{|c|c|}
         \hline
-        $I_8V$ & $4,782 mA$\\
+        $I_{8V}$ & $4,782 mA$\\
         \hline
-        $I_5V$ & $1,695 mA$\\
+        $I_{5V}$ & $1,695 mA$\\
         \hline
-        $I_-3V$ & $-6,276 mA$\\
+        $I_{-3V}$ & $-6,276 mA$\\
         \hline
         V di lato & $3,198 V$\\
         \hline
@@ -165,7 +170,7 @@
     Secondo esperimento:
     \begin{align*}
        & V = \frac{\frac{V_1}{R_1} + \frac{V_2}{R_2} + \frac{V_3}{R_3}}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \frac{1}{R_4}}\\
-       & V = \frac{\frac{8V}{1k\Omega} + \frac{5V}{1k\Omega} + \frac{-3V}{1k\Omega}}{\frac{1}{1k\Omega} + \frac{1}{1k\Omega} + \frac{1}{1k\Omega} + \frac{1}{10k\Omega}}
+       & V = \frac{\frac{8V}{1k\Omega} + \frac{5V}{1k\Omega} + \frac{-3V}{1k\Omega}}{\frac{1}{1k\Omega} + \frac{1}{1k\Omega} + \frac{1}{1k\Omega} + \frac{1}{10k\Omega}} = 3,226V
     \end{align*}
     
 
