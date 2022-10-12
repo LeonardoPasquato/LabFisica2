@@ -26,7 +26,7 @@
 %c'è 1 inch di margine a destra e sinistra
 %\geometry{margin = 1.25 in}
 
-\title{\huge Relazione prima esperienza di laboratorio Fisica 2}
+\title{\huge \textbf{Relazione prima esperienza di laboratorio Fisica 2}}
 \author{Gruppo A15: Armani Stefano, Cappellaro Nicola, Pasquato Leonardo}
 \date{10-10-2022}
 \vspace{0,25cm}
@@ -45,7 +45,7 @@
     quella di familiarizzare con gli strumenti del laboratorio di elettronica
     che andremo a usare anche nelle esperienze future, principalmente con il
     generatore da banco e il multimetro e altri componenti elettrici,
-    nel nostro caso i resistori. \par
+    nel nostro caso i resistori.
     Grazie a questi strumenti andremo a misurare e verificare con dati reali
     alcune misure di tensione e il teorema di Millman.\par
 
@@ -55,14 +55,15 @@
     %introduzione teorica   Nicola
     \section{Cenni teorici}
     In questa prima esperienza utilizziamo e verificheremo la legge di Ohm utilizzando i resistori, mentre nel secondo esperimento
-    verifichiamo il teorema di Millman per le reti elettriche.
+    verifichiamo il teorema di Millman per le reti elettriche. \par
     Ricordiamo:
     \begin{itemize}
-        \item Legge di Ohm $V = R \bullet I$
+        \item Legge di Ohm $V = R \cdot I$
         \item Legge di Kirchhoff delle correnti $\sum_{e = 1}^{n} i_e = \sum_{u = 1}^{m} i_u $
         \item Legge di Kirchhoff delle tensioni $\sum_{k = 1}^{n} V_k = 0 $
         \item Teorema di Millman $V_0 = \frac{\sum_{k = 1}^{n} \frac{V_k}{R_k} }{\sum_{k = 1}^{n} \frac{1}{R_k} }$
     \end{itemize}
+    I circuiti realizzati sono di tipo lineare a tempo invariante e li chiameremo d'ora in poi (LTI)
     
     
     %elenco strumentazione
@@ -110,29 +111,65 @@
 
     %risulati sperimentali
     \section{Dati sperimentali}
-    Primo esperimento: \par
+    \begin{center}
+        Primo esperimento: \par
     \begin{tabular}{|c|c|c|c|}
         \hline
         Test 1 & $R_1 =1k\Omega$ & $R_2=1k\Omega$ & $V=3,020V$\\
         \hline
-        Test 2 & $R_1 =1k\Omega$ & $R_2=500\Omega$ & $V=2.011V$\\
+        Test 2 & $R_1 =1k\Omega$ & $R_2=500\Omega$ & $V=2,011V$\\
         \hline
-        Test 3 & $R_1 =10k\Omega$ & $R_2=10k\Omega$ & $V=3.007V$\\
+        Test 3 & $R_1 =10k\Omega$ & $R_2=10k\Omega$ & $V=3,007V$\\
         \hline
-        Test 4 & $R_1 =100k\Omega$ & $R_2=100k\Omega$ & $V=2.987V$\\
+        Test 4 & $R_1 =100k\Omega$ & $R_2=100k\Omega$ & $V=2,987V$\\
         \hline
-        Test 5 & $R_1 =1M\Omega$ & $R_2=1\Omega$ & $V=2.857$\\
+        Test 5 & $R_1 =1M\Omega$ & $R_2=1\Omega$ & $V=2,857$\\
         \hline
-        Test 6 & $R_1 =10\Omega$ & $R_2=10\Omega$ & $V=1.836$\\
+        Test 6 & $R_1 =10\Omega$ & $R_2=10\Omega$ & $V=1,836$\\
         \hline
+    
     \end{tabular}
+    \end{center}
+    
+    \begin{center}
+        Secondo esperimento: \par
+    \begin{tabular}{|c|c|}
+        \hline
+        $I_8V$ & $4,782 mA$\\
+        \hline
+        $I_5V$ & $1,695 mA$\\
+        \hline
+        $I_-3V$ & $-6,276 mA$\\
+        \hline
+        V di lato & $3,198 V$\\
+        \hline
+    
+    \end{tabular}
+    \end{center}
 
 
     
     %elaborazione dati  Leonardo
     \section{Elaborazione dati}
     Primo esperimento, $V_s = 6V$:
-   
+    \begin{align*}
+        I_s = \frac{V_s}{R_eq}  \hspace{2cm}   & V_eq = R_1 + R_2   \hspace{2cm} & v_{R_2} = \frac{V_s}{V_eq} \cdot R_2 \\
+        & V_{Test1} = \frac{6V}{1k\Omega + 1k\Omega} \cdot 1k\Omega = 3V \\
+        & V_{Test2} = \frac{6V}{1k\Omega + 500\Omega} \cdot 500\Omega = 2V \\
+        & V_{Test3} = \frac{6V}{10k\Omega + 10k\Omega} \cdot 10k\Omega = 3V \\
+        & V_{Test4} = \frac{6V}{100k\Omega + 100k\Omega} \cdot 100k\Omega = 3V \\
+        & V_{Test5} = \frac{6V}{1M\Omega + 1M\Omega} \cdot 1M\Omega = 3V \\
+        & V_{Test6} = \frac{6V}{10M\Omega + 10M\Omega} \cdot 1M\Omega = 3V \\
+    \end{align*}
+
+    Secondo esperimento:
+    \begin{align*}
+       & V = \frac{\frac{V_1}{R_1} + \frac{V_2}{R_2} + \frac{V_3}{R_3}}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \frac{1}{R_4}}\\
+       & V = \frac{\frac{8V}{1k\Omega} + \frac{5V}{1k\Omega} + \frac{-3V}{1k\Omega}}{\frac{1}{1k\Omega} + \frac{1}{1k\Omega} + \frac{1}{1k\Omega} + \frac{1}{10k\Omega}}
+    \end{align*}
+    
+
+
     %conclusione
     \section{Conclusione}
     Nel primo esperimento abbiamo ottenuto dei valori di tensione molto vicini a quelli teorici con i resistori inferiori ad $1M\Omega$.
