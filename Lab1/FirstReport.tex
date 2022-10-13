@@ -23,10 +23,12 @@
 \usepackage{setspace}
 \usepackage{anysize}
 \usepackage{geometry}
+\usepackage{epsfig}
+\usepackage{graphicx}
 %c'è 1 inch di margine a destra e sinistra
 %\geometry{margin = 1.25 in}
 
-\title{\huge \textbf{Relazione prima esperienza di laboratorio Fisica 2}}
+\title{\huge Relazione prima esperienza di laboratorio Fisica 2}
 \author{Gruppo A15: Armani Stefano, Cappellaro Nicola, Pasquato Leonardo}
 \date{10-10-2022}
 \vspace{0,25cm}
@@ -41,15 +43,12 @@
 
     %scopo  Stefano
     \section{Scopo dell'esperienza}
-    Lo scopo della nostra prima esperienza in laboratiorio è stato
-    quella di familiarizzare con gli strumenti del laboratorio di elettronica
-    che andremo a usare anche nelle esperienze future, principalmente con il
-    generatore da banco e il multimetro e altri componenti elettrici,
-    nel nostro caso i resistori.
-    Grazie a questi strumenti andremo a misurare e verificare con dati reali
-    alcune misure di tensione e il teorema di Millman.\par
-
-    
+    Lo scopo della prima esperienza di laboratorio è stato quello di proiettare su un piano reale ciò che è stato
+    illustrato solamente in teoria, in modo tale da valutare le discrepanze tra i risultati sperimentali e i risultati attesi dai calcoli ideali.
+    I circuiti costruti sono stati utilizzati per verificare sperimentalmente le leggi base dell'elettrotecnica, ossia la legge di Ohm,
+    le leggi di Kirkhhoff, la legge di Millman. \par
+    Lo scopo più implicito di questa esperienza è stato quello di familiarizzare con gli strumenti del laboratorio come il generatore da banco,
+    breadboard, multimetro e componenti elettronici. 
     
         
     %introduzione teorica   Nicola
@@ -58,14 +57,16 @@
     verifichiamo il teorema di Millman per le reti elettriche. \par
     Ricordiamo:
     \begin{itemize}
-        \item Legge di Ohm $V = R \cdot I$
+        \item Legge di Ohm $V = R \cdot I$, ossia la legge caratteristica dei \textit{resistori};
         \item Legge di Kirchhoff delle correnti $\sum_{e = 1}^{n} i_e = \sum_{u = 1}^{m} i_u $
         \item Legge di Kirchhoff delle tensioni $\sum_{k = 1}^{n} V_k = 0 $
-        \item Teorema di Millman $V_0 = \frac{\sum_{k = 1}^{n} \frac{V_k}{R_k} }{\sum_{k = 1}^{n} \frac{1}{R_k} }$
+        \item Teorema di Millman $V_0 = \frac{\sum_{k = 1}^{n} \frac{V_k}{R_k} }{\sum_{k = 1}^{n} \frac{1}{R_k} }$, ossia una diretta conseguenza delle leggi di Kirchhoff: la tensione ai terminali di un circuito comuni ad \textit{n} rami
+                corrisponde al rapporto tra la somma algebrica delle correnti cortocircuitate dei rami presi singolarmente e la somma dei reciproci delle resistenze.
     \end{itemize}
-    I circuiti realizzati sono di tipo lineare a tempo invariante e li chiameremo d'ora in poi (LTI)
+    I circuiti realizzati sono di tipo lineare a tempo invariante e sono detti LTI, quindi i loro comportamenti sono idealmente costanti nel tempo.
     
     
+    \newpage
     %elenco strumentazione
     \section{Strumentazione}
     \begin{itemize}
@@ -87,7 +88,17 @@
         \item 2 resistenze in serie;
         \item un multimetro collegato in parallelo alla seconda resistenza
     \end{itemize}
-    %INSERISCI FIGURA DELLO SCHEMATICO DEL CIRCUITO + FOTO REALE
+
+    %foto circuito
+    %\FloatBarrier
+    \begin{figure}[!h]            %[!h] = inserimento forzato dell'immagine sotto il titoletto della section
+        \begin{center}
+            \includegraphics[width = 5cm]{ese1.png}
+            \caption{Partitore di tensione}
+            %\label{ese1}
+        \end{center}
+    \end{figure}
+    
     Si è successivamente replicato lo stesso circuito su una \textbf{Breadboard} utilizzando due resistori da
     $1k\Omega$, connettori da banco per collegare la Breadboard ai morsetti serrafilo connessi al generatore
     tramite \textbf{connettori a banana}. \par
@@ -103,16 +114,24 @@
     Nella seconda parte di questa esperienza di laboratorio è stato illustrato dal punto di vista teorico
     un teorema derivante dalle leggi di \textbf{Kirchhoff}, ossia il teorema di \textbf{Jacob Millman}.
     Dopo un'illustrazione teorica, è stato esposto un secondo esercizio in cui si può verificare sperimentalmente il teorema di Millman:
+    
     %foto esercizio e foto circuito
+    \begin{figure}[!h]
+        \begin{center}
+            \includegraphics[width = 7cm]{ese2.png}
+            \caption{Secondo circuito}
+            %\label{ese2}
+        \end{center}
+    \end{figure}
+
     Una volta costruito l'esercizio sono state ripetute 3 misurazioni da parte del multimetro impostato come 
     amperometro, in modo tale da poter misurare sperimentalmente le correnti uscenti da tutte le resistenze.\par
     Ottenuti i valori delle correnti, è stato valutato la tensione di lato sulla resistenza da $10k\Omega$, come in figura:
     Questa misurazione coincide sperimentalmente con la tensione calcolata tramite il teorema di Millman.\par
 
+
+
     %risulati sperimentali
-
-    \newpage
-
     \section{Dati sperimentali}
     \begin{center}
         Primo esperimento: \par
@@ -155,7 +174,8 @@
     \end{center}
 
 
-    
+    \newpage
+
     %elaborazione dati  Leonardo
     \section{Elaborazione dati}
     Primo esperimento, $V_s = 6V$:
@@ -180,13 +200,20 @@
 
     %conclusione
     \section{Conclusione}
-    Nel primo esperimento abbiamo ottenuto dei valori di tensione molto vicini a quelli teorici con i resistori inferiori ad $1M\Omega$.
-    Mentre abbiamo ottenuto dei valori di tensione inferiori a quelli attesi quando abbiamo usato i resistori da $1M\Omega$ ed $10M\Omega$
-    Questo perché anche il voltmetro è un componente con una sua resistenza interna, quindi aggiungendolo al circuito
-    viene attraversato da corrente ed è come se ci fosse un ulteriore resistenza in parallelo.
+    Nel primo esperimento sono stati ottenuti dei valori di tensione prossimi a quelli ideali con i resistori inferiori ad $1M\Omega$.
+    Nel momento in cui sono stati utilizzati resistori con resistenze dell'ordine dei $M\Omega$, sono emersi valori distanti dal risultato teorico.
+    Questo succede a causa della resistenza interna del voltmetro $R_{intV}$: posizionato il voltmetro in parallelo alla seconda resistenza, sono state rilevate grosse variazioni
+    perchè le resistenze $R_1$ e $R_2$ avevano valori prossimi all'incognita resistenza interna del voltmetro, dunque quest'ultima ha agito come una vera e propria
+    resistenza in parallelo a $R_2$. Questa anomalia non è stata rilevata con i resistori precedenti poichè avevano resistenze di ordini ben minori rispetto alla resistenza
+    interna del voltmetro, dunque la maggior intensità della corrente percorreva i resistori $R_1$ e $R_2$ (Vedi legge di Ohm).\par
+    È stato quindi possibile calcolare in modo approssimativo $R_{intv}$:
+    \begin{equation}
+        \frac{V_out}{V_in} = \frac{R_{eqV}}{R_1 + R_{eqV}} = \frac{6V}{2V} = \frac{1}{3} \longrightarrow R_{eqV} = \frac{R_1}{2} = \frac{10M\Omega}{2} = 5M\Omega
+    \end{equation}
+    dove $R_eqV$ è il parallelo tra $R_2$ e $R_{intV}$.\par
+    La resistenza interna del multimetro dunque risulta essere pari a $10M\Omega$
 
-    D'altra parte nel secondo esperimento abbiamo visto che il teorema di Millman è verificato e siamo riusciti a trovare la tensione
-    di lato applicando la formula e misurando effettivamente le singole correnti 
-
+    Nel secondo esperimento è stato verificato il teorema di Millman: dopo aver misurato sperimentalmente il valore della tensione di lato ai morsetti comuni,
+    è stato confrontata questa misurazione con il valore atteso. La valutazione è stata positiva: il valore sperimentale era prossimo al valore ideale.
 
 \end{document}
