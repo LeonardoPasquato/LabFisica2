@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1665594899 "/home/leonardo/Desktop/Workspace/2uni/LabFisica2/Lab1/FirstReport.tex" "FirstReport.pdf" "FirstReport" 1665594900
+["pdflatex"] 1665600161 "/home/leonardo/Desktop/Workspace/2uni/LabFisica2/Lab1/FirstReport.tex" "FirstReport.pdf" "FirstReport" 1665600161
   "/etc/texmf/web2c/texmf.cnf" 1665407763 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/leonardo/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1665431691 11524 7a6021219235086f8bb659cab1e8129a ""
-  "/home/leonardo/Desktop/Workspace/2uni/LabFisica2/Lab1/FirstReport.tex" 1665594899 8818 b11cf6e33dcd1079b67f0fdfb580de5a ""
+  "/home/leonardo/Desktop/Workspace/2uni/LabFisica2/Lab1/FirstReport.tex" 1665600161 8827 5db31651511af31b4435ebc248add566 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -53,8 +53,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1665407767 162899 515de6df2324cca4eba6407bef60e07c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1665407773 1435896 3ebeb6e67b217501c8a04a13ea51c99b ""
-  "FirstReport.aux" 1665594900 752 f4724b47fba653e49b82081d15ffecfb "pdflatex"
-  "FirstReport.tex" 1665594899 8818 b11cf6e33dcd1079b67f0fdfb580de5a ""
+  "FirstReport.aux" 1665600161 752 f4724b47fba653e49b82081d15ffecfb "pdflatex"
+  "FirstReport.tex" 1665600161 8827 5db31651511af31b4435ebc248add566 ""
   (generated)
   "FirstReport.aux"
   "FirstReport.log"
