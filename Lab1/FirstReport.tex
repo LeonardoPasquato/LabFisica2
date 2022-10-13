@@ -23,8 +23,13 @@
 \usepackage{setspace}
 \usepackage{anysize}
 \usepackage{geometry}
+<<<<<<< HEAD
 \usepackage{epsfig}
 \usepackage{graphicx}
+=======
+\usepackage{graphicx}
+\graphicspath{ {./images/} }        %percorso immagini
+>>>>>>> origin/main
 %c'è 1 inch di margine a destra e sinistra
 %\geometry{margin = 1.25 in}
 
@@ -88,6 +93,7 @@
         \item 2 resistenze in serie;
         \item un multimetro collegato in parallelo alla seconda resistenza
     \end{itemize}
+<<<<<<< HEAD
 
     %foto circuito
     %\FloatBarrier
@@ -99,6 +105,11 @@
         \end{center}
     \end{figure}
     
+=======
+    %INSERISCI FIGURA DELLO SCHEMATICO DEL CIRCUITO + FOTO REALE
+    %\includegraphics{circuito1.png}
+    %provo a mettere la foto
+>>>>>>> origin/main
     Si è successivamente replicato lo stesso circuito su una \textbf{Breadboard} utilizzando due resistori da
     $1k\Omega$, connettori da banco per collegare la Breadboard ai morsetti serrafilo connessi al generatore
     tramite \textbf{connettori a banana}. \par
@@ -111,6 +122,7 @@
     I risultati più discostati dai precedenti sono sicuramente stati rilevati nelle ultime due misurazioni in cui sono state utilizzati
     resistori con resistenze ben più alte rispetto alle precedenti.\par
     \par
+    %\includegraphics{circuito2.png}
     Nella seconda parte di questa esperienza di laboratorio è stato illustrato dal punto di vista teorico
     un teorema derivante dalle leggi di \textbf{Kirchhoff}, ossia il teorema di \textbf{Jacob Millman}.
     Dopo un'illustrazione teorica, è stato esposto un secondo esercizio in cui si può verificare sperimentalmente il teorema di Millman:
@@ -180,7 +192,7 @@
     \section{Elaborazione dati}
     Primo esperimento, $V_s = 6V$:
     \begin{align*}
-        I_s = \frac{V_s}{R_eq}  \hspace{2cm}   & v_{R_2} = \frac{V_s}{V_eq} \cdot R_2  \hspace{2cm} &  V_eq = R_1 + R_2 \\
+        I_s = \frac{V_s}{R_{eq}}  \hspace{2cm}   & v_{R_2} = \frac{V_s}{V_{eq}} \cdot R_2  \hspace{2cm} &  V_{eq} = R_1 + R_2 \\
         & V_{Test1} = \frac{6V}{1k\Omega + 1k\Omega} \cdot 1k\Omega = 3V \\
         & V_{Test2} = \frac{6V}{1k\Omega + 500\Omega} \cdot 500\Omega = 2V \\
         & V_{Test3} = \frac{6V}{10k\Omega + 10k\Omega} \cdot 10k\Omega = 3V \\
@@ -191,9 +203,8 @@
 
     Secondo esperimento:
     \begin{align*}
-       &V_M = \frac{\frac{V_1}{R_1} + \frac{V_2}{R_2} + \frac{V_3}{R_3}}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \frac{1}{R_4}} =  \\
-       & \hspace{0.55cm} = \frac{\frac{8V}{1k\Omega} + \frac{5V}{1k\Omega} + \frac{-3V}{1k\Omega}}{\frac{1}{1k\Omega} + \frac{1}{1k\Omega} + \frac{1}{1k\Omega} + \frac{1}{10k\Omega}} = \\
-       & \hspace{0.57cm} = 3,226V
+       & V = \frac{\frac{V_1}{R_1} + \frac{V_2}{R_2} + \frac{V_3}{R_3}}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \frac{1}{R_4}}\\
+       & V = \frac{\frac{8V}{1k\Omega} + \frac{5V}{1k\Omega} + \frac{-3V}{1k\Omega}}{\frac{1}{1k\Omega} + \frac{1}{1k\Omega} + \frac{1}{1k\Omega} + \frac{1}{10k\Omega}} = 3,226V
     \end{align*}
     
 
