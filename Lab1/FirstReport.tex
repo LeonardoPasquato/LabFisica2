@@ -31,10 +31,7 @@
 \title{\huge Relazione prima esperienza di laboratorio Fisica 2}
 \author{Gruppo A15: Armani Stefano, Cappellaro Nicola, Pasquato Leonardo}
 \date{10-10-2022}
-\vspace{0,25cm}
 \setlength{\parindent}{0cm}
-\vspace{0,25cm}
-
 
 \begin{document}
     %print sezione titolo
@@ -82,12 +79,8 @@
     \section{Esperimento}
     Una volta messo a disposizione il kit contenente la strumentazione indicata al punto $3$, %fai link
     si è esposto il primo esercizio riguardante un semplice \textbf{partitore di tensione}.
-    Il partitore di tensione è un circuito LTI di prim'ordine come in figura, composto da:
-    \begin{itemize}
-        \item Generatore di tensione;
-        \item 2 resistenze in serie;
-        \item un multimetro collegato in parallelo alla seconda resistenza
-    \end{itemize}
+    Il partitore di tensione è un circuito LTI di prim'ordine come in figura, composto da
+    generatore di tensione, 2 resistori in serie ed un multimetro collegato in parallelo al secondo resistore.
 
     %\FloatBarrier foto schematico
     \begin{figure}[!h]            %[!h] = inserimento forzato dell'immagine sotto il titoletto della section
@@ -103,15 +96,16 @@
     Si è successivamente replicato lo stesso circuito su una \textbf{Breadboard} utilizzando due resistori da
     $1k\Omega$, connettori da banco per collegare la Breadboard ai morsetti serrafilo connessi al generatore
     tramite \textbf{connettori a banana}. \par
-    Successivamente sono stati accesi il multimetro e il generatore e, per primo step, sono stati impostati i limiti di corrente e tensione massima
+    Successivamente sono stati accesi il multimetro e il generatore e per prima cosa sono stati impostati i limiti di corrente e tensione massima
     erogabile dal generatore, rispettivamente a $6mA$ e $6V$.\par
     A questo punto è stato possibile attivare il generatore affinchè nel circuito venisse mantenuta la tensione voluta e,
     grazie al multimetro impostato in modo tale da fungere da voltmetro, è stato possibile ottenere la tensione di lato della
     seconda resistenza in serie. La tensione di lato ottenuta è stata pari a $3.020V$.
     Successivamente, è stato ripetuto lo stesso esperimento utilizzando diversi resistori, ottenendo risultati leggermente diversi.\par
-    I risultati più discostati dai precedenti sono sicuramente stati rilevati nelle ultime due misurazioni in cui sono state utilizzati
-    resistori con resistenze ben più alte rispetto alle precedenti.\par
+    I risultati più discostati dai precedenti sono sicuramente stati rilevati nelle ultime due misurazioni in cui sono stati utilizzati
+    resistori con resistenze ben più alte rispetto alle precedenti (nell'ordine dei $M\Omega$).\par
     \par
+    \newpage
     Nella seconda parte di questa esperienza di laboratorio è stato illustrato dal punto di vista teorico
     un teorema derivante dalle leggi di \textbf{Kirchhoff}, ossia il teorema di \textbf{Jacob Millman}.
     Dopo un'illustrazione teorica, è stato esposto un secondo esercizio in cui si può verificare sperimentalmente il teorema di Millman:
@@ -125,10 +119,10 @@
         \end{center}
     \end{figure}
 
-    Una volta costruito l'esercizio sono state ripetute 3 misurazioni da parte del multimetro impostato come 
-    amperometro, in modo tale da poter misurare sperimentalmente le correnti uscenti da tutte le resistenze.\par
+    Una volta costruito il circuito sono state ripetute 3 misurazioni da parte del multimetro impostato come 
+    amperometro, in modo tale da poter misurare sperimentalmente le correnti uscenti dai resistori collegati ai rispettivi generatori.\par
     Ottenuti i valori delle correnti, è stato valutato la tensione di lato sulla resistenza da $10k\Omega$, come in figura:
-    Questa misurazione coincide sperimentalmente con la tensione calcolata tramite il teorema di Millman.\par
+    Questa misurazione sperimentale è prossima alla tensione teorica calcolata tramite il teorema di Millman.\par
 
 
 
@@ -187,7 +181,7 @@
         & V_{Test3} = \frac{6V}{10k\Omega + 10k\Omega} \cdot 10k\Omega = 3V \\
         & V_{Test4} = \frac{6V}{100k\Omega + 100k\Omega} \cdot 100k\Omega = 3V \\
         & V_{Test5} = \frac{6V}{1M\Omega + 1M\Omega} \cdot 1M\Omega = 3V \\
-        & V_{Test6} = \frac{6V}{10M\Omega + 10M\Omega} \cdot 1M\Omega = 3V \\
+        & V_{Test6} = \frac{6V}{10M\Omega + 10M\Omega} \cdot 10M\Omega = 3V \\
     \end{align*}
 
     Secondo esperimento:
@@ -206,7 +200,7 @@
     perchè le resistenze $R_1$ e $R_2$ avevano valori prossimi all'incognita resistenza interna del voltmetro, dunque quest'ultima ha agito come una vera e propria
     resistenza in parallelo a $R_2$. Questa anomalia non è stata rilevata con i resistori precedenti poichè avevano resistenze di ordini ben minori rispetto alla resistenza
     interna del voltmetro, dunque la maggior intensità della corrente percorreva i resistori $R_1$ e $R_2$ (Vedi legge di Ohm).\par
-    È stato quindi possibile calcolare in modo approssimativo $R_{intv}$:
+    È stato quindi possibile calcolare approssimativo $R_{intv}$, considerando $V_in = V_6 \approx 2V$ :
     \begin{equation}
         \frac{V_{out}}{V_{in}} = \frac{R_{eqV}}{R_1 + R_{eqV}} = \frac{6V}{2V} = \frac{1}{3} \longrightarrow R_{eqV} = \frac{R_1}{2} = \frac{10M\Omega}{2} = 5M\Omega
     \end{equation}
