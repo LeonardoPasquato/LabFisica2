@@ -68,10 +68,10 @@
     \section{Strumentazione}
     \begin{itemize}
         \item Breadboard con annessi morsetti serrafilo;
-        \item Cavi con connettori "a banana";
+        \item Cavi con connettori a banana;
         \item Resistori di varie misure ($1k\Omega$, $10k\Omega$, $100k\Omega$, $1M\Omega$, $10M\Omega$);
         \item Connettori da banco (Jumper);
-        \item Multimetro: sensibilità: $sensibilita$ , portata: $portata$;
+        \item Multimetro;
         \item Alimentatore da banco (generatore di corrente e tensione).
     \end{itemize}
 
@@ -87,7 +87,7 @@
         \begin{center}
             \includegraphics[width = 5cm]{ese1.png}
             \caption{Partitore di tensione}
-            %\label{ese1}
+            \label{ese1}
         \end{center}
     \end{figure}
     
@@ -115,13 +115,13 @@
         \begin{center}
             \includegraphics[width = 7cm]{ese2.png}
             \caption{Secondo circuito}
-            %\label{ese2}
+            \label{ese2}
         \end{center}
     \end{figure}
 
     Una volta costruito il circuito sono state ripetute 3 misurazioni da parte del multimetro impostato come 
     amperometro, in modo tale da poter misurare sperimentalmente le correnti uscenti dai resistori collegati ai rispettivi generatori.\par
-    Ottenuti i valori delle correnti, è stato valutato la tensione di lato sulla resistenza da $10k\Omega$, come in figura:
+    Ottenuti i valori delle correnti, è stata valutata la tensione di lato ($V_M$) sulla resistenza da $10k\Omega$, come in figura:
     Questa misurazione sperimentale è prossima alla tensione teorica calcolata tramite il teorema di Millman.\par
 
 
@@ -134,7 +134,7 @@
         \hline
         \textit{Test} & \textit{Primo resistore} & \textit{Secondo resistore} & \textit{Tensione di lato} \\
         \hline
-        Test 1 & $R_1 =1k\Omega$ & $R_2=1k\Omega$ & $V_1=(3,020.65 \pm errore)V$\\
+        Test 1 & $R_1 =1k\Omega$ & $R_2=1k\Omega$ & $V_1=3,020.65V$\\
         \hline
         Test 2 & $R_1 =1k\Omega$ & $R_2=500\Omega$ & $V_2=2,011.25V$\\
         \hline
@@ -151,16 +151,17 @@
     \end{center}
     
     \begin{center}
-        Secondo esperimento: \par
+        Secondo esperimento, rispetto alla figura \ref{ese2} si indica con il segno positivo la corrente che scorre dal basso verso l'alto e con segno negativo
+        la corrente che scorre dall'alto verso il basso: \par
     \begin{tabular}{|c|c|c|}
         \hline
         \textit{Ramo cortocircuitato} & \textit{Tensione} & \textit{Corrente} \\
         \hline
-        Primo ramo & $V_1 = 8V$ & $I_1 = 4,782.75 mA$\\
+        Primo ramo & $V_1 = 8V$ & $I_1 = +4,782.75 mA$\\
         \hline
-        Secondo ramo & $V_2 = 5V$ & $I_2 = 1,695.85 mA$\\
+        Secondo ramo & $V_2 = 5V$ & $I_2 = +1,695.85 mA$\\
         \hline
-        Terzo ramo & $V_3 = -3V$ & $I_3 = 6,276.95 mA$\\
+        Terzo ramo & $V_3 = -3V$ & $I_3 = -6,276.95 mA$\\
         \hline
         & $V_M = 3,198.98V$&\\
         \hline
@@ -174,21 +175,21 @@
     %elaborazione dati  Leonardo
     \section{Elaborazione dati}
     Primo esperimento, $V_s = 6V$:
-    \begin{align*}
+    \begin{align}
         I_s = \frac{V_s}{R_{eq}}  \hspace{2cm}   & v_{R_2} = \frac{V_s}{V_{eq}} \cdot R_2  \hspace{2cm} &  V_{eq} = R_1 + R_2 \\
         & V_{Test1} = \frac{6V}{1k\Omega + 1k\Omega} \cdot 1k\Omega = 3V \\
         & V_{Test2} = \frac{6V}{1k\Omega + 500\Omega} \cdot 500\Omega = 2V \\
         & V_{Test3} = \frac{6V}{10k\Omega + 10k\Omega} \cdot 10k\Omega = 3V \\
         & V_{Test4} = \frac{6V}{100k\Omega + 100k\Omega} \cdot 100k\Omega = 3V \\
         & V_{Test5} = \frac{6V}{1M\Omega + 1M\Omega} \cdot 1M\Omega = 3V \\
-        & V_{Test6} = \frac{6V}{10M\Omega + 10M\Omega} \cdot 10M\Omega = 3V \\
-    \end{align*}
+        & V_{Test6} = \frac{6V}{10M\Omega + 10M\Omega} \cdot 10M\Omega = 3V
+    \end{align}
 
     Secondo esperimento:
-    \begin{align*}
+    \begin{align}
        & V_M = \frac{\frac{V_1}{R_1} + \frac{V_2}{R_2} + \frac{V_3}{R_3}}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \frac{1}{R_4}}\\
        & V_M = \frac{\frac{8V}{1k\Omega} + \frac{5V}{1k\Omega} + \frac{-3V}{1k\Omega}}{\frac{1}{1k\Omega} + \frac{1}{1k\Omega} + \frac{1}{1k\Omega} + \frac{1}{10k\Omega}} = 3,226V
-    \end{align*}
+    \end{align}
     
 
 
@@ -208,6 +209,6 @@
     La resistenza interna del multimetro dunque risulta essere pari a $10M\Omega$
 
     Nel secondo esperimento è stato verificato il teorema di Millman: dopo aver misurato sperimentalmente il valore della tensione di lato ai morsetti comuni,
-    è stato confrontata questa misurazione con il valore atteso. La valutazione è stata positiva: il valore sperimentale era prossimo al valore ideale.
+    è stata confrontata questa misurazione con il valore atteso. La valutazione è stata positiva: il valore sperimentale era prossimo al valore ideale.
 
 \end{document}
