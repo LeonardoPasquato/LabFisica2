@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1668271040 "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab2/secondReport.tex" "secondReport.pdf" "secondReport" 1668271040
+["pdflatex"] 1668271155 "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab2/secondReport.tex" "secondReport.pdf" "secondReport" 1668271155
   "/etc/texmf/web2c/texmf.cnf" 1665407763 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/leonardo/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1665431691 11524 7a6021219235086f8bb659cab1e8129a ""
-  "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab2/secondReport.tex" 1668271038 9579 5f531b0c2f9c6ebd76c467ea2cbad060 ""
+  "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab2/secondReport.tex" 1668271154 9579 92fa1c9afc2fed547c41d0cee76eb191 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -63,8 +63,8 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1665407773 1435896 3ebeb6e67b217501c8a04a13ea51c99b ""
   "circuito.png" 1668198166 13259 4ed325eb6c58ee3dded62aaa7b8091d4 ""
   "fisica.png" 1668268329 148533 877772459fec23853984ce0fdd0c3090 ""
-  "secondReport.aux" 1668271040 1017 0cb1a90e408a15297d7975a6767cd9c6 "pdflatex"
-  "secondReport.tex" 1668271038 9579 5f531b0c2f9c6ebd76c467ea2cbad060 ""
+  "secondReport.aux" 1668271155 1017 0cb1a90e408a15297d7975a6767cd9c6 "pdflatex"
+  "secondReport.tex" 1668271154 9579 92fa1c9afc2fed547c41d0cee76eb191 ""
   (generated)
   "secondReport.aux"
   "secondReport.log"
