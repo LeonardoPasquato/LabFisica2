@@ -169,5 +169,21 @@
 
     
     \section{Conclusione}
+    Nel primo esperimento sono stati ottenuti 3 costanti di tempo ragionevolemte vicine ai valori
+    attesi dai calcoli teorici. Solamente il terzo caso, in cui $R = 200k\Omega$ e $C = 5nF$, si discosta maggiormente
+    dai valori attesi, soprattutto riguardo l'ampiezza (tensione) d'ingresso e uscita: la tensione picco-picco
+    in ingresso risulta essere pari a circa $4 V$, nonostante il generatore di forme d'onda crei un'onda quadra di ampiezza
+    pari a $5V$. Il motivo è racchiuso all'interno dell'oscilloscopio: utilizzando un resistore con un'alta resistenza,
+    parte della corrente fluisce all'interno del resistore interno dell'oscilloscopio, con resistenza $R_{osc}$.
+    La causa della discrepanza dell'ampiezza è quindi data da $R_{osc}$, la quale causa una caduta di potenziale.\par
+    È poossibile stimare $R_{osc}$, con $V_{in} = 5V$, $V_{out} \approx 4$: 
+    \begin{equation}
+        \frac{V_{out}}{V_{in}} = \frac{4V}{5V} = \frac{4}{5} = \frac{R_{osc}}{R_{eq}} = \frac{R_{osc}}{R + R_{osc}} \longrightarrow
+        4 \cdot R = 4 \cdot 200K\Omega = 800 k\Omega
+    \end{equation}
+    \par
+    Nel secondo esperimento invece, l'onda impulsiva è stata concretizzata da un'onda quadra, modulando la sua durata.
+    Tra i 3 tentativi, l'onda quadra che meglio approssima l'impulso è quella con durata minore, anche se la misurazione manuale
+    della tensione diventa complessa.
     
 \end{document}
