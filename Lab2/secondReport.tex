@@ -25,6 +25,7 @@
 \usepackage{geometry}
 \usepackage{epsfig}
 \usepackage{graphicx}
+\usepackage{xcolor}
 %c'è 1 inch di margine a destra e sinistra
 %\geometry{margin = 1.25 in}
 
@@ -235,7 +236,7 @@
             a: \hspace{0.5 cm}\frac{1}{\tau} = \frac{5 \cdot 707.887\cdot10^{-6}V - 3.5238\cdot4760\cdot10^{-6}}{5\cdot707.68\cdot10^{-8} - 4760\cdot10^{-6}\cdot4760\cdot10^{-6}}
             = -1039.876741s^{-1} \longrightarrow \tau_a = -0.00096s
             \\
-            ln{V_0} = (ln{V})_medio - \frac{1}{\tau}\cdot t_{medio} = 0.7048 - (-1039.876741)\cdot952.10^{-6} = 1.69472419 \longrightarrow V_{0a} = 5.445V
+            ln{V_0} = (ln{V})_{medio} - \frac{1}{\tau}\cdot t_{medio} = 0.7048 - (-1039.876741)\cdot952.10^{-6} = 1.69472419 \longrightarrow V_{0a} = 5.445V
         \end{split}
     \end{equation}
     %grafico b
@@ -244,7 +245,7 @@
             b : \hspace{0.5 cm}\frac{1}{\tau} = \frac{4 \cdot 14.2248\cdot10^{-8}V - 0.3074\cdot632\cdot10^{-6}}{4\cdot14.2248\cdot10^{-8} - 632\cdot10^{-6}\cdot632\cdot10^{-6}}
             = -9435.820s^{-1} \longrightarrow \tau_b = -0.000105979s
             \\
-            ln{V_0} = (ln{V})_medio - \frac{1}{\tau}\cdot t_{medio} = 0.0769 - (-9435.820)\cdot158^{-6} = 1.567717 \longrightarrow V_{0b} = 4.7957V
+            ln{V_0} = (ln{V})_{medio} - \frac{1}{\tau}\cdot t_{medio} = 0.0769 - (-9435.820)\cdot158^{-6} = 1.567717 \longrightarrow V_{0b} = 4.7957V
         \end{split}
     \end{equation}
     %grafico c
@@ -253,11 +254,21 @@
             c : \hspace{0.5 cm}\frac{1}{\tau} = \frac{5 \cdot 481.16\cdot10^{-8}V - 2.5731\cdot3780\cdot10^{-6}}{5\cdot481.16\cdot10^{-8} - 3780\cdot10^{-6}\cdot3780\cdot10^{-6}}
             = -1183.529085s^{-1} \longrightarrow \tau_c = -0.000844931s
             \\
-            ln{V_0} = (ln{V})_medio - \frac{1}{\tau}\cdot t_{medio} = 0.5146 - (-1183.529)\cdot756^{-6} = 1.40937 \longrightarrow V_{0c} = 4.09337V
+            ln{V_0} = (ln{V})_{medio} - \frac{1}{\tau}\cdot t_{medio} = 0.5146 - (-1183.529)\cdot756^{-6} = 1.40937 \longrightarrow V_{0c} = 4.09337V
         \end{split}
     \end{equation}
     \end{center}
-    
+
+    \begin{figure}[!h]
+        \begin{center}
+            \includegraphics[width = 4.5cm]{Agraph.png}
+            \includegraphics[width = 4.5cm]{Bgraph.png}
+            \includegraphics[width = 4.5cm]{Cgraph.png}
+            \caption{Grafici: \color{green}$V_a$, \color{blue}$V_b$, \color{red}$V_c$}
+        \end{center}
+    \end{figure}
+
+    \newpage
     \section{Conclusione}
     Nel primo esperimento sono stati ottenuti 3 costanti di tempo ragionevolemte vicine ai valori
     attesi dai calcoli teorici. Solamente il terzo caso, in cui $R = 200k\Omega$ e $C = 5nF$, si discosta maggiormente
