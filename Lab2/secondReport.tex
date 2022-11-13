@@ -175,29 +175,23 @@
     \end{table}
 
     \section{Elaborazione dati}
-    Ricordiamo la formula della scarica di un condensatore. \par
-    $V_c(t)=V_0 \cdot e^{-\frac{t}{\tau}}$ \par
-    Possiamo riscriverla come: $y=a \cdot e^{-\frac{x}{\tau}}$ \par
-    ora applichiamo il logaritmo naturale da entrambe le parti ed otteniamo \par
-    $ln(y)=ln(a)-{\frac{x}{\tau}}$ \par
-    Utilizziamo ora le seguenti sostituzioni: \par
-    $y'=ln(y)$ \par
-    $a'=ln(a)$ \par
-    $b=\frac{1}{\tau}$ \par
-    Otteniamo una funzione lineare del tipo: $y'=a'-bx$ \par
-    A questo punto possiamo usare la regressione lineare per trovare le componenti $a'$ e $b$. \par
-    $b=\frac{n\sum_{i = 1}^{n} ln(y_i)x_i - (\sum_{i = 1}^{n} ln(y_i))(\sum_{i = 1}^{n} x_i) }{n\sum_{i = 1}^{n} x_i^2 - (\sum_{i = 1}^{n} x_i)(\sum_{i = 1}^{n} x_i)}$ \par
-    $a'=y'_{medio}-bx_{medio}$ \par
-    Ricordiamoci ora delle sostituzioni fatte in precedenza e troviamo: \par
-    $a=e^{a'}$ \par
-    $\tau=\frac{1}{b}$ \par
-    \begin{figure}[!h]
-        \begin{center}
-            \includegraphics[width = 16cm]{fisica.png}
-            \caption{Tabella valori}
-            \label{tabella valori}
-        \end{center}
-    \end{figure}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textit{Misura} & \textit{t[s]} & \textit{ln(V)} & \textit{$t^2$} & \textit{$t[s] \cdot ln(V)$} \\
+        \hline
+        1 & $120 \cdot 10^{-6}$ & $1.5041$ & $1.44 \cdot 10^{-8}$ & $180.489 \cdot 10^{-6}$ \\
+        \hline
+        2 & $360 \cdot 10^{-6}$ & $1.2641$ & $12.96 \cdot 10^{-8}$ & $455.086 \cdot 10^{-6}$ \\
+        \hline
+        3 & $960 \cdot 10^{-6}$ & $0.9400$ & $92.16 \cdot 10^{-8}$ & $902.407 \cdot 10^{-6}$ \\
+        \hline
+        4 & $1160 \cdot 10^{-6}$ & $0.4318$ & $134.56 \cdot 10^{-8}$ & $500.868 \cdot 10^{-6}$ \\
+        \hline
+        5 & $2160 \cdot 10^{-6}$ & $-0.6162$ & $466.56 \cdot 10^{-8}$ & $-1330.962 \cdot 10^{-6}$ \\
+        \hline
+        Somma & $4760 \cdot 10^{-6}$ & $3.5238$ & $707.68 \cdot 10^{-8}$ & $707.887 \cdot 10^{-6}$ \\
+        \hline
+    \end{tabular}
     
     \newpage
     \section{Conclusione}
