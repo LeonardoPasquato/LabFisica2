@@ -49,7 +49,7 @@
     
     \section{Cenni teorici}
     Per questa esperienza abbiamo bisogno della formula della scarica di un condensatore e la teoria e formule della regressione lineare.
-    La formula della scarica di un condensatore è \par
+    La formula della scarica di un condensatore è:
     $V_c(t)=V_0 \cdot e^{-\frac{t}{\tau}}$ \par
     La regressione lineare ci viene in aiuto visto la quantità di dati prelevati.
      Nel nostro caso abbiamo prelevato diversi valori della differenza di potenziale in istanti temporali diversi.\par
@@ -58,9 +58,9 @@
     ora applichiamo il logaritmo naturale da entrambe le parti ed otteniamo \par
     $ln(y)=ln(a)-{\frac{x}{\tau}}$ \par
     Utilizzando le seguenti sostituzioni: 
-    $y'=ln(y)$, 
-    $a'=ln(a)$, 
-    $b=\frac{1}{\tau}$, 
+    $y'=ln(y)$; 
+    $a'=ln(a)$; 
+    $b=\frac{1}{\tau}$; 
     otteniamo una funzione lineare del tipo: $y'=a'-bx$.
     A questo punto è possibile usare la regressione lineare per trovare le componenti $a'$ e $b$: 
     $b=\frac{n\sum_{i = 1}^{n} ln(y_i)x_i - (\sum_{i = 1}^{n} ln(y_i))(\sum_{i = 1}^{n} x_i) }{n\sum_{i = 1}^{n} x_i^2 - (\sum_{i = 1}^{n} x_i)(\sum_{i = 1}^{n} x_i)}$; 
