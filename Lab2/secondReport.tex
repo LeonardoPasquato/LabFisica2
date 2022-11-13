@@ -47,6 +47,24 @@
     sono state studiate le risposte della rete a tali ingressi grazie all'oscilloscopio. 
     
     \section{Cenni teorici}
+    Per questa esperienza abbiamo bisogno della formula della scarica di un condensatore e la teoria e formule della regressione lineare.
+    La formula della scarica di un condensatore è \par
+    $V_c(t)=V_0 \cdot e^{-\frac{t}{\tau}}$ \par
+    La regressione lineare ci viene in aiuto visto la quantità di dati prelevati.
+     Nel nostro caso abbiamo prelevato diversi valori della differenza di potenziale in istanti temporali diversi.\par
+    Consideriamo quindi la differenza di potenziale e il tempo come un set di dati sperimentali x e y costituito da n campioni ciascuno.\par 
+    Per linearizzare l’andamento della carica avremo che $y=a \cdot e^{-\frac{x}{\tau}}$ \par
+    ora applichiamo il logaritmo naturale da entrambe le parti ed otteniamo \par
+    $ln(y)=ln(a)-{\frac{x}{\tau}}$ \par
+    Utilizziamo ora le seguenti sostituzioni: \par
+    $y'=ln(y)$ \par
+    $a'=ln(a)$ \par
+    $b=\frac{1}{\tau}$ \par
+    Otteniamo una funzione lineare del tipo: $y'=a'-bx$ \par
+    A questo punto possiamo usare la regressione lineare per trovare le componenti $a'$ e $b$. \par
+    $b=\frac{n\sum_{i = 1}^{n} ln(y_i)x_i - (\sum_{i = 1}^{n} ln(y_i))(\sum_{i = 1}^{n} x_i) }{n\sum_{i = 1}^{n} x_i^2 - (\sum_{i = 1}^{n} x_i)(\sum_{i = 1}^{n} x_i)}$ \par
+    $a'=y'_{medio}-bx_{medio}$ \par
+
 
     \section{Strumentazione}
     \begin{itemize}
