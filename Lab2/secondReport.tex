@@ -272,18 +272,28 @@
     Nel primo esperimento sono stati ottenuti 3 costanti di tempo ragionevolemte vicine ai valori
     attesi dai calcoli teorici. Solamente il terzo caso, in cui $R = 200k\Omega$ e $C = 5nF$, si discosta maggiormente
     dai valori attesi, soprattutto riguardo l'ampiezza (tensione) d'ingresso e uscita: la tensione picco-picco
-    in ingresso risulta essere pari a circa $4 V$, nonostante il generatore di forme d'onda crei un'onda quadra di ampiezza
-    pari a $5V$. Il motivo è racchiuso all'interno dell'oscilloscopio: utilizzando un resistore con un'alta resistenza,
-    parte della corrente fluisce all'interno del resistore interno dell'oscilloscopio, con resistenza $R_{osc}$.
-    La causa della discrepanza dell'ampiezza è quindi data da $R_{osc}$, la quale causa una caduta di potenziale.\par
-    È poossibile stimare $R_{osc}$, con $V_{in} = 5V$, $V_{out} \approx 4$: 
+    in ingresso risulta essere pari a circa $4 V$, nonostante il generatore crei un'onda quadra di ampiezza
+    pari a $5V$. Il motivo è racchiuso all'interno dell'oscilloscopio: utilizzando un'alta resistenza,
+    parte della corrente fluisce all'interno della resistenza $R_{osc}$ interna dell'oscilloscopio.\par
+    È possibile stimare $R_{osc}$, con $V_{in} = 5V$, $V_{out} \approx 4$: 
     \begin{equation}
         \frac{V_{out}}{V_{in}} = \frac{4V}{5V} = \frac{4}{5} = \frac{R_{osc}}{R_{eq}} = \frac{R_{osc}}{R + R_{osc}} \longrightarrow
         4 \cdot R = 4 \cdot 200K\Omega = 800 k\Omega
     \end{equation}
     \par
-    Nel secondo esperimento invece, l'onda impulsiva è stata concretizzata da un'onda quadra, modulando la sua durata.
-    Tra i 3 tentativi, l'onda quadra che meglio approssima l'impulso è quella con durata minore, anche se la misurazione manuale
-    della tensione diventa complessa.
+    Nel secondo esperimento l'onda impulsiva è stata concretizzata da un'onda quadra, di cui è stata modulata la durata a $d_a = 100\mu s$, $d_b = 50 \mu s$, $d_c = 10 \mu s$,
+    poichè impulso di ampiezza infinita e durata nulla non è riproducibile nella realtà.
+    Il capacitore del circuito RC ha quindi un intervall $d$ di tempo per caricarsi, per poi iniziare a scaricarsi.
+    La misurazione manuale diventa allora complicata, poichè minore è l'intervallo $d$ e minore è la carica accumulata dal capacitore.\par
+    Per la misurazione della risposta all'impulso del circuito dunque il valore più indicato di $d$ è quello di $d_a = 100 \mu s$.
+    Per calcolare la costante di tempo del circuito in risposta all'impulso di durata $d_a$ si prosegue con lo stesso
+    procedimento dell'esperimento precedente:
+    \begin{equation}
+        \frac{1}{\tau} = \frac{-0.0199 - (-0.01197)}{2.06\cdot10^{-5} - 1.22\cdot10^{-5}} = -944.05s^{-1} \longrightarrow \tau = -1.06s
+    \end{equation}
+
+    %Nel secondo esperimento invece, l'onda impulsiva è stata concretizzata da un'onda quadra, modulando la sua durata.
+    %Tra i 3 tentativi, l'onda quadra che meglio approssima l'impulso è quella con durata minore, anche se la misurazione manuale
+    %della tensione diventa complessa.
     
 \end{document}
