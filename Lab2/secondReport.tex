@@ -73,7 +73,7 @@
     \section{Strumentazione}
     \begin{itemize}
         \item Breadboard con annessi morsetti serrafilo;
-        \item Cavi con connettori a banana e onnettori da banco (Jumper);
+        \item Cavi con connettori a banana e connettori da banco (Jumper);
         \item Resistori di varie misure ($1k\Omega$, $10k\Omega$, $100k\Omega$) e capacitori da $10nF$, $100nF$;
         \item Generatore di forme d'onda Rigol DG1032;
         \item Oscilloscopio Rigol MSO2102A.
@@ -83,7 +83,7 @@
     
     Durante la prima parte di questa esperienza di laboratorio sono stati illustrati due
     importanti strumenti da banco, ossia il generatore di forme d'onda (onda quadra, sinusoide, impulso) e l'oscilloscopio: in particolare sono stati
-    presentati i parametri di un'onda e il metodo per modularli dal generatore: ampiezza, frequenza, fase, offset \par
+    presentati i parametri di un'onda (ampiezza, frequenza, fase, offset) e il metodo per modularli dal generatore.\par
     Successivamente sono stati applicati questi due strumenti in un semplice circuito RC, composto da
     un resistore e un capacitore in serie, generatore di forme d'onda e oscilloscopio collegato in parallelo
     al capacitore, come in figura.
@@ -109,7 +109,8 @@
     un'onda impulsiva.
     La stessa procedura per ottenere i valori di tensioni istantanee è stata applicata anche in questo caso,
     al fine di studiare l'andamento della tensione avendo in ingresso un'onda impulsiva.
-    L'ingresso impulsivo è stato modulato 3 volte, variando la durata dello stesso.    
+    Poichè nella realtà un impulso non è replicabile, l'ingresso impulsivo è stato concretizzato in un'onda quadra, di cui
+    è stata modulata 3 volte la durata.    
 
     \section{Dati sperimentali}
 
@@ -321,9 +322,8 @@
         R_{osc} = 4 \cdot R = 4 \cdot 200K\Omega = 800 k\Omega
     \end{equation}
     \par
-    Nel secondo esperimento l'onda impulsiva è stata concretizzata da un'onda quadra, di cui è stata modulata la durata a $d_a = 100\mu s$, $d_b = 50 \mu s$, $d_c = 10 \mu s$,
-    poichè impulso di ampiezza infinita e durata nulla non è riproducibile nella realtà.
-    Il capacitore del circuito RC ha quindi un intervall $d$ di tempo per caricarsi, per poi iniziare a scaricarsi.
+    Nel secondo esperimento l'onda impulsiva è stata concretizzata da un'onda quadra, di cui è stata modulata la durata a $d_a = 100\mu s$, $d_b = 50 \mu s$, $d_c = 10 \mu s$.
+    Il capacitore del circuito RC ha quindi un intervallo $d$ di tempo per caricarsi, per poi iniziare a scaricarsi.
     La misurazione manuale diventa allora complicata, poichè minore è l'intervallo $d$ e minore è la carica accumulata dal capacitore.\par
     Per la misurazione della risposta all'impulso del circuito dunque il valore più indicato di $d$ è quello di $d_a = 100 \mu s$.
     Per calcolare la costante di tempo del circuito in risposta all'impulso di durata $d_a$ si prosegue con lo stesso
