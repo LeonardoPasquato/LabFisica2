@@ -27,6 +27,8 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{caption}
+\usepackage{geometry}
+\geometry{a4paper, top=3cm, bottom=3cm, left=2.5cm, right=2.5cm, bindingoffset=5mm}
 \captionsetup[table]{position=top, labelformat=empty}
 %c'è 1 inch di margine a destra e sinistra
 %\geometry{margin = 1.25 in}
@@ -212,7 +214,7 @@
     \begin{center}
     \begin{tabular}{|c|c|c|c|c|}
         \hline
-        \textit{Misura (caso $a$)} & \textit{t[s]} & \textit{ln(V)} & \textit{$t^2$} & \textit{$t[s] \cdot ln(V)$} \\
+        \textit{Misura (caso $a$)} & \textit{t[s]} & \textit{ln($V_a$)} & \textit{$t^2$} & \textit{$t[s] \cdot ln(V_a)$} \\
         \hline
         1 & $120 \cdot 10^{-6}$ & $1.5041$ & $1.44 \cdot 10^{-8}$ & $180.489 \cdot 10^{-6}$ \\
         \hline
@@ -231,7 +233,7 @@
     \end{tabular}
     \begin{tabular}{|c|c|c|c|c|}
         \hline
-        \textit{Misura (caso $b$)} & \textit{t[s]} & \textit{ln(V)} & \textit{$t^2$} & \textit{$t[s] \cdot ln(V)$} \\
+        \textit{Misura (caso $b$)} & \textit{t[s]} & \textit{ln($V_b$)} & \textit{$t^2$} & \textit{$t[s] \cdot ln(V_b)$} \\
         \hline
         1 & $32 \cdot 10^{-6}$ & $1.2641$ & $1.024 \cdot 10^{-9}$ & $40.255206 \cdot 10^{-6}$ \\
         \hline
@@ -248,7 +250,7 @@
     \end{tabular}
     \begin{tabular}{|c|c|c|c|c|}
         \hline
-        \textit{Misura (caso $c$)} & \textit{t[s]} & \textit{ln(V)} & \textit{$t^2$} & \textit{$t[s] \cdot ln(V)$} \\
+        \textit{Misura (caso $c$)} & \textit{t[s]} & \textit{ln($V_c$)} & \textit{$t^2$} & \textit{$t[s] \cdot ln(V_c)$} \\
         \hline
         1 & $100 \cdot 10^{-6}$ & $1.3056$ & $1 \cdot 10^{-8}$ & $130.563 \cdot 10^{-6}$ \\
         \hline
@@ -271,7 +273,7 @@
             a: \hspace{0.5 cm}\frac{1}{\tau} = \frac{5 \cdot 707.887\cdot10^{-6}V - 3.5238\cdot4760\cdot10^{-6}}{5\cdot707.68\cdot10^{-8} - 4760\cdot10^{-6}\cdot4760\cdot10^{-6}}
             = -1039.876741s^{-1} \longrightarrow \tau_a = -0.00096s
             \\
-            ln{V_0} = (ln{V})_{medio} - \frac{1}{\tau}\cdot t_{medio} = 0.7048 - (-1039.876741)\cdot952.10^{-6} = 1.69472419 \longrightarrow V_{0a} = 5.445V
+            ln{V_0} = (ln{V_a})_{medio} - \frac{1}{\tau}\cdot t_{medio} = 0.7048 - (-1039.876741)\cdot952.10^{-6} = 1.69472419 \longrightarrow V_{0a} = 5.445V
         \end{split}
     \end{equation}
     %grafico b
@@ -280,7 +282,7 @@
             b : \hspace{0.5 cm}\frac{1}{\tau} = \frac{4 \cdot 14.2248\cdot10^{-8}V - 0.3074\cdot632\cdot10^{-6}}{4\cdot14.2248\cdot10^{-8} - 632\cdot10^{-6}\cdot632\cdot10^{-6}}
             = -9435.820s^{-1} \longrightarrow \tau_b = -0.000105979s
             \\
-            ln{V_0} = (ln{V})_{medio} - \frac{1}{\tau}\cdot t_{medio} = 0.0769 - (-9435.820)\cdot158^{-6} = 1.567717 \longrightarrow V_{0b} = 4.7957V
+            ln{V_0} = (ln{V_b})_{medio} - \frac{1}{\tau}\cdot t_{medio} = 0.0769 - (-9435.820)\cdot158^{-6} = 1.567717 \longrightarrow V_{0b} = 4.7957V
         \end{split}
     \end{equation}
     %grafico c
@@ -289,17 +291,17 @@
             c : \hspace{0.5 cm}\frac{1}{\tau} = \frac{5 \cdot 481.16\cdot10^{-8}V - 2.5731\cdot3780\cdot10^{-6}}{5\cdot481.16\cdot10^{-8} - 3780\cdot10^{-6}\cdot3780\cdot10^{-6}}
             = -1183.529085s^{-1} \longrightarrow \tau_c = -0.000844931s
             \\
-            ln{V_0} = (ln{V})_{medio} - \frac{1}{\tau}\cdot t_{medio} = 0.5146 - (-1183.529)\cdot756^{-6} = 1.40937 \longrightarrow V_{0c} = 4.09337V
+            ln{V_0} = (ln{V_c})_{medio} - \frac{1}{\tau}\cdot t_{medio} = 0.5146 - (-1183.529)\cdot756^{-6} = 1.40937 \longrightarrow V_{0c} = 4.09337V
         \end{split}
     \end{equation}
     \end{center}
 
     \begin{figure}[!h]
         \begin{center}
-            \includegraphics[width = 4.5cm]{Agraph.png}
-            \includegraphics[width = 4.5cm]{Bgraph.png}
-            \includegraphics[width = 4.5cm]{Cgraph.png}
-            \caption{Grafici: \color{green}$V_a$, \color{blue}$V_b$, \color{red}$V_c$}
+            \includegraphics[width = 5cm]{Agraph.png}
+            \includegraphics[width = 5cm]{Bgraph.png}
+            \includegraphics[width = 5cm]{Cgraph.png}
+            \caption{Grafici: \color{green}$V_a(t)$, \color{blue}$V_b(t)$, \color{red}$V_c(t)$}
         \end{center}
     \end{figure}
 
