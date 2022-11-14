@@ -26,6 +26,8 @@
 \usepackage{epsfig}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{caption}
+\captionsetup[table]{position=top, labelformat=empty}
 %c'è 1 inch di margine a destra e sinistra
 %\geometry{margin = 1.25 in}
 
@@ -108,12 +110,11 @@
     L'ingresso impulsivo è stato modulato 3 volte, variando la durata dello stesso.    
 
     \section{Dati sperimentali}
-    $a$:$R = 10k\Omega$,$C = 100nF$
-    \hspace{0.90 cm} $b$:$R = 10k\Omega$,$C = 100nF$
-    \hspace{0.90 cm} $c$:$R = 200k\Omega$,$C = 5nF$
 
     \begin{table} [!htb]
         \begin{minipage}{.32\linewidth}
+            \caption{$a$:$R = 10k\Omega$,$C = 100nF$}
+            \centering
             \begin{tabular}{|c|c|c|}
                 \hline
                 \textit{Tempo [$\mu s$]} & \textit{Tensione [V]} \\
@@ -131,6 +132,8 @@
             \end{tabular}
         \end{minipage}
         \begin{minipage}{.32\linewidth}
+            \caption{$b$:$R = 10k\Omega$,$C = 10nF$}
+            \centering
             \begin{tabular}{|c|c|c|}
                 \hline
                 \textit{Tempo [$\mu s$]} & \textit{Tensione [V]} \\
@@ -146,6 +149,8 @@
             \end{tabular}
         \end{minipage}
         \begin{minipage}{.32\linewidth}
+            \caption{$c$:$R = 200k\Omega$,$C = 5nF$}
+            \centering
             \begin{tabular}{|c|c|c|}
                 \hline
                 \textit{Tempo [$\mu s$]} & \textit{Tensione [V]} \\
@@ -163,6 +168,24 @@
             \end{tabular}
         \end{minipage}
         
+    \end{table}
+
+    \begin{table}
+        \caption{Secondo esperimento: $R = 10k\Omega$,$C = 100nF$, $d=100\mu s$}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            \textit{Tempo [$\mu s$]} & \textit{Tensione [mV]} \\
+            \hline
+            20 & 979.4 \\
+            \hline
+            520 & 581 \\
+            \hline
+            980 & 381.8 \\
+            \hline
+            1980 & 149.4 \\
+            \hline
+        \end{tabular}
     \end{table}
 
     \section{Elaborazione dati}
