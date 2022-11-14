@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.11)  14 NOV 2022 12:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.11)  14 NOV 2022 15:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -259,13 +259,18 @@ File: circuito.png Graphic file (type png)
 <use circuito.png>
 Package pdftex.def Info: circuito.png  used on input line 92.
 (pdftex.def)             Requested size: 170.71652pt x 68.79932pt.
- [2 <./circuito.png>]
-Overfull \hbox (24.22064pt too wide) detected at line 257
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 174--208
+[]$[]$ $[]$ 
+ []
+
+[2 <./circuito.png>]
+Overfull \hbox (24.22064pt too wide) detected at line 276
 []
  []
 
 
-Overfull \hbox (13.59038pt too wide) detected at line 275
+Overfull \hbox (13.59038pt too wide) detected at line 294
 []
  []
 
@@ -273,29 +278,29 @@ Overfull \hbox (13.59038pt too wide) detected at line 275
 <Agraph.png, id=29, 586.19pt x 591.20876pt>
 File: Agraph.png Graphic file (type png)
 <use Agraph.png>
-Package pdftex.def Info: Agraph.png  used on input line 280.
+Package pdftex.def Info: Agraph.png  used on input line 299.
 (pdftex.def)             Requested size: 128.0374pt x 129.12813pt.
 <Bgraph.png, id=30, 586.19pt x 591.20876pt>
 File: Bgraph.png Graphic file (type png)
 <use Bgraph.png>
-Package pdftex.def Info: Bgraph.png  used on input line 281.
+Package pdftex.def Info: Bgraph.png  used on input line 300.
 (pdftex.def)             Requested size: 128.0374pt x 129.12813pt.
 <Cgraph.png, id=31, 586.19pt x 591.20876pt>
 File: Cgraph.png Graphic file (type png)
 <use Cgraph.png>
-Package pdftex.def Info: Cgraph.png  used on input line 282.
+Package pdftex.def Info: Cgraph.png  used on input line 301.
 (pdftex.def)             Requested size: 128.0374pt x 129.12813pt.
  [4 <./Agraph.png> <./Bgraph.png> <./Cgraph.png>] [5] (./secondReport.aux) ) 
 Here is how much of TeX's memory you used:
  4569 strings out of 475071
  74923 string characters out of 5782907
- 452641 words of memory out of 5000000
+ 455641 words of memory out of 5000000
  25946 multiletter control sequences out of 15000+600000
  474708 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,19n,76p,321b,376s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on secondReport.pdf (5 pages, 234667 bytes).
+Output written on secondReport.pdf (5 pages, 234889 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream

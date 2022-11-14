@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1668424756 "c:/Users/nicol/Downloads/LabFisica2-2/Lab2/secondReport.tex" "secondReport.pdf" "secondReport" 1668424757
+["pdflatex"] 1668435430 "c:/Users/nicol/Downloads/LabFisica2-2/Lab2/secondReport.tex" "secondReport.pdf" "secondReport" 1668435433
   "Agraph.png" 1668422166 27182 5650f48b37e0f17a5f7191bc9558b468 ""
   "Bgraph.png" 1668422166 23067 af994b223ae03eea62ebcb03f73b4bc4 ""
   "Cgraph.png" 1668422166 24357 da31659cb2f6c9eb922e309ea17e9927 ""
-  "c:/Users/nicol/Downloads/LabFisica2-2/Lab2/secondReport.tex" 1668424753 15320 265ad98a2156c637d2cbb50750f86753 ""
+  "c:/Users/nicol/Downloads/LabFisica2-2/Lab2/secondReport.tex" 1668435427 16038 a510355613523ef49dd7728ed2ec8fbe ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1665500681 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1665503492 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1665502409 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -69,8 +69,8 @@
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1665515201 3058779 7c1c6dca727213d8af5f6ad8d91bf9e3 ""
   "c:/texlive/2022/texmf.cnf" 1665515010 713 e69b156964470283e0530f5060668171 ""
   "circuito.png" 1668266434 13259 d011fe23a73a97f02ab99dadd175474b ""
-  "secondReport.aux" 1668424757 1525 2460341afb2bf61bcd0d0897d0049db7 "pdflatex"
-  "secondReport.tex" 1668424753 15320 265ad98a2156c637d2cbb50750f86753 ""
+  "secondReport.aux" 1668435432 1696 91daac97a7b6c44d9ce79d5fdac0ca3a "pdflatex"
+  "secondReport.tex" 1668435427 16038 a510355613523ef49dd7728ed2ec8fbe ""
   (generated)
   "secondReport.aux"
   "secondReport.log"
