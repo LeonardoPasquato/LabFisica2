@@ -105,9 +105,22 @@
             H(j\omega) =  \frac{1}{1+\frac{\mathbf{Z_C}}{\mathbf{Z_R}} + \frac{\mathbf{Z_R}}{\mathbf{Z_C}}}
             = \frac{1}{1+\frac{j}{R} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )} = 
             \frac{1 - \frac{j}{R} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )}{1 + \frac{1}{R^2} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )}
-
             %grafici + funzioni di ampiezza e fase
+        \end{split}
+    \end{equation}
 
+    Secondo esperimento:
+    \begin{equation}
+        \begin{split}
+            KVL \longrightarrow V_C + V_L + V_R = V_s \hspace{3cm}
+            \\
+            V_C + L\frac{dI_L(t)}{dt} + I_R(t)R = V_s \longrightarrow
+            \frac{V_C(t)}{LC} + \frac{d^2V_C(t)}{dt^2} + \frac{R}{L} \frac{dV_C(t)}{dt} = V_S
+            \\
+            dove \hspace{0.5cm} \frac{R}{2L} = \alpha \hspace{0.5cm} \frac{1}{LC} = \omega_0^2 \hspace{3cm}
+            \\
+            \ddot{V_c(t)} + 2\alpha \dot{V_C} + \omega_0 \dot{V_C} \hspace{3cm} = V_S
+            %grafici con inviluppo e rispettivi delta
         \end{split}
     \end{equation}
 
