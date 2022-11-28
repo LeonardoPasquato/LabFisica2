@@ -53,7 +53,12 @@
     particolare in relazione alle frequenze naturali del circuito).
 
     \section{Cenni teorici}
-
+    Un diagramma di Bode consiste nella rappresentazione con due grafici della risposta in frequenza di un sistema LTI, 
+    uno per il modulo mentre l'altro per la fase.
+    Si ricorda la funzione di trasferimento \par 
+    $\left\lvert H(j\omega) \right\rvert = \sqrt{\frac{1}{1 + Q^2(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega} )} } $ \par
+    $\phi_H(j\omega) = \arctan \Biggl(-Q\Bigl(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega} \Bigr)\Biggr)$ \par
+    (è la trasformata di fourie della risposta all'impulso)
     \section{Strumentazione}
     \begin{itemize}
         \item Breadboard con annessi morsetti serrafilo;
@@ -91,7 +96,37 @@
 
     
     \section{Dati sperimentali}
-
+    \begin{table} [!htb]
+        \begin{minipage}{.32\linewidth}
+            \caption{$a$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$}
+            \centering
+            \begin{tabular}{|c|c|c|}
+                \hline
+                \textit{Frequenza [Hz]} & \textit{Ampiezza [V]} & \textit{Sfasamento [ms]} \\
+                \hline
+                1 & $\longrightarrow 0$ & 196 \\
+                \hline
+                10 & 0.0324 & 27.8 \\
+                \hline
+                100 & 0.312 & 2.68 \\
+                \hline
+                1000 & 3 & 0.364 \\
+                \hline
+                2000 & 4.68 & 0.017 \\
+                \hline
+                2500 & 4.78 & 0.011 \\
+                \hline
+                3000 & 4.5 & 0.02 \\
+                \hline
+                5000 & 3.12 & 0.068 \\
+                \hline
+                10000 & 1.62 & 0.0192 \\
+                \hline
+                50000 & 0.093 & 0.0058 \\
+                \hline
+            \end{tabular}
+        \end{minipage}
+    \end{table}
     \section{Elaborazione dati}
     Primo esperimento:
     \begin{equation}
