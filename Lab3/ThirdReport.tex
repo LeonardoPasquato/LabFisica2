@@ -20,6 +20,7 @@
 
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage{amsfonts} 
 \usepackage{setspace}
 \usepackage{anysize}
 \usepackage{geometry}
@@ -94,11 +95,20 @@
 
     \section{Elaborazione dati}
     Primo esperimento:
+
     \begin{equation}
-        H(j\omega) = \frac{\mathbf{V}_{out}}{\mathbf{V}_{in}}
-        \hspace{0.5cm} dove \hspace{0.5cm} \mathbf{V}_{out} = \mathbf{I} \cdot \mathbf{Z_{R}} = \frac{\mathbf{V_{in}}}{\mathbf{Z_R} + \mathbf{Z_C} + \mathbf{Z_L}}
-        \cdot \mathbf{Z_R}
-        H(j\omega)
+        \begin{split}
+            H(j\omega) = \frac{\mathbf{V}_{out}}{\mathbf{V}_{in}}
+            \hspace{0.5cm} dove \hspace{0.5cm} \mathbf{V}_{out} = \mathbf{I} \cdot \mathbf{Z_{R}} = \frac{\mathbf{V_{in}}}{\mathbf{Z_R} + \mathbf{Z_C} + \mathbf{Z_L}}
+            \cdot \mathbf{Z_R}
+            \\
+            H(j\omega) =  \frac{1}{1+\frac{\mathbf{Z_C}}{\mathbf{Z_R}} + \frac{\mathbf{Z_R}}{\mathbf{Z_C}}}
+            = \frac{1}{1+\frac{j}{R} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )} = 
+            \frac{1 - \frac{j}{R} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )}{1 + \frac{1}{R^2} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )}
+
+            %grafici + funzioni di ampiezza e fase
+
+        \end{split}
     \end{equation}
 
     \section{Conclusione}
