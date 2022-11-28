@@ -30,7 +30,7 @@
 \usepackage{caption}
 \usepackage{geometry}
 \geometry{a4paper, top=3cm, bottom=3cm, left=2.5cm, right=2.5cm, bindingoffset=5mm}
-%\captionsetup[table]{position=top, labelformat=empty}
+\captionsetup[table]{position=top, labelformat=empty}
 %c'è 1 inch di margine a destra e sinistra
 %\geometry{margin = 1.25 in}
 
@@ -60,6 +60,7 @@
     $\left\lvert H(j\omega) \right\rvert = \sqrt{\frac{1}{1 + Q^2(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega} )} } $ \par
     $\phi_H(j\omega) = \arctan \Biggl(-Q\Bigl(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega} \Bigr)\Biggr)$ \par
     (è la trasformata di fourie della risposta all'impulso)
+
     \section{Strumentazione}
     \begin{itemize}
         \item Breadboard con annessi morsetti serrafilo;
@@ -97,6 +98,7 @@
 
     
     \section{Dati sperimentali}
+    Primo esperimento:
     \begin{table} [!htb]
         \begin{minipage}{.32\linewidth}
             \caption{$a$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$}
@@ -127,10 +129,101 @@
                 \hline
             \end{tabular}
         \end{minipage}
+        \begin{minipage}{.32\linewidth}
+            \caption{$b$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$}
+            \centering
+            \begin{tabular}{|c|c|c|}
+                \hline
+                \textit{Frequenza [Hz]} & \textit{Ampiezza [V]} & \textit{Sfasamento [ms]} \\
+                \hline
+                1 & $\longrightarrow 0$ & 196 \\
+                \hline
+                10 & 0.0324 & 27.8 \\
+                \hline
+                100 & 0.312 & 2.68 \\
+                \hline
+                1000 & 3 & 0.364 \\
+                \hline
+                2000 & 4.68 & 0.017 \\
+                \hline
+                2500 & 4.78 & 0.011 \\
+                \hline
+                3000 & 4.5 & 0.02 \\
+                \hline
+                5000 & 3.12 & 0.068 \\
+                \hline
+                10000 & 1.62 & 0.0192 \\
+                \hline
+                50000 & 0.093 & 0.0058 \\
+                \hline
+            \end{tabular}
+        \end{minipage}
     \end{table}
+
+    Secondo esperimento:
+    \begin{table} [!htb]
+        \begin{minipage}{.32\linewidth}
+            \caption{$a$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$}
+            \centering
+            \begin{tabular}{|c|c|c|}
+                \hline
+                \textit{Ampiezza [V]} & \textit{Sfasamento [ms]} \\
+                \hline
+                1 & 0 \\
+                \hline
+                10 & 0.0324 \\
+                \hline
+                100 & 0.312 \\
+                \hline
+                1000 & 3 \\
+                \hline
+                2000 & 4.68 \\
+                \hline
+            \end{tabular}
+        \end{minipage}
+        \begin{minipage}{.32\linewidth}
+            \caption{$b$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$}
+            \centering
+            \begin{tabular}{|c|c|}
+                \hline
+                \textit{Ampiezza [V]} & \textit{Sfasamento [ms]} \\
+                \hline
+                1 & 0 \\
+                \hline
+                10 & 0.0324 \\
+                \hline
+                100 & 0.312 \\
+                \hline
+                1000 & 3 \\
+                \hline
+                2000 & 4.68 \\
+                \hline
+            \end{tabular}
+        \end{minipage}
+        \begin{minipage}{.32\linewidth}
+            \caption{$c$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$}
+            \centering
+            \begin{tabular}{|c|c|}
+                \hline
+                \textit{Ampiezza [V]} & \textit{Sfasamento [ms]} \\
+                \hline
+                1 & 0 \\
+                \hline
+                10 & 0.0324 \\
+                \hline
+                100 & 0.312 \\
+                \hline
+                1000 & 3 \\
+                \hline
+                2000 & 4.68 \\
+                \hline
+            \end{tabular}
+        \end{minipage}
+    \end{table}
+
+
     \section{Elaborazione dati}
     Primo esperimento:
-
     \begin{equation}
         \begin{split}
             H(j\omega) = \frac{\mathbf{V}_{out}}{\mathbf{V}_{in}}
