@@ -1,0 +1,69 @@
+%____________________________________________________________________________
+%
+%STRUTTURA RELAZIONE:
+%
+%istituto
+%scopo
+%introduzione teorica
+%strumentazione
+%procedimento     
+%dati sperimentali con tab
+%elaborazione dati
+%conclusione
+%
+%_____________________________________________________________________________
+
+%NOTA UTILE: se in un testo bisogna inserire qualche dato numerico in riga, senza
+%dover ricorrere a \begin{equation}, basta includere cio' che serve dentro a $....$
+%esempio: $10k\Omega$ per inserire il dato in Ohm, poichè alcuni caratteri non vengono presi se stanno fuori da un'equazione
+
+
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{anysize}
+\usepackage{geometry}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{geometry}
+\geometry{a4paper, top=3cm, bottom=3cm, left=2.5cm, right=2.5cm, bindingoffset=5mm}
+\captionsetup[table]{position=top, labelformat=empty}
+%c'è 1 inch di margine a destra e sinistra
+%\geometry{margin = 1.25 in}
+
+\title{ Relazione terza esperienza di laboratorio Fisica 2}
+\author{Gruppo A15: Armani Stefano, Cappellaro Nicola, Pasquato Leonardo}
+\date{07-11-2022}
+\setlength{\parindent}{0cm}
+
+\begin{document}
+    %print sezione titolo
+    \maketitle
+    \rule{\linewidth}{0.1mm}
+
+    \section{Scopo dell'esperienza}
+
+    
+    \section{Cenni teorici}
+
+    \section{Strumentazione}
+    \begin{itemize}
+        \item Breadboard con annessi morsetti serrafilo;
+        \item Cavi con connettori a banana e connettori da banco (Jumper);
+        \item Resistori di varie misure ($1k\Omega$, $10k\Omega$), capacitori da $1nF$ $10nF$, $100nF$;
+        \item decade di induttanze
+        \item Generatore di forme d'onda Rigol DG1032;
+        \item Oscilloscopio Rigol MSO2102A.
+    \end{itemize}
+
+    \section{Esperimento}
+    
+    \section{Dati sperimentali}
+
+    \section{Elaborazione dati}
+
+    \section{Conclusione}
+
+\end{document}
