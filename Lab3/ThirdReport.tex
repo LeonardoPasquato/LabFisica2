@@ -61,8 +61,15 @@
     Nella terza esperienza di laboratorio è stato costruito manualmente un semplice circuito LTI di secondo ordine, ossia
     un circuito composto da generatore di forme d'onda, capacitore, induttore e resistore. Per poter inserire un induttore, è stato utilizzato un dispositivo
     detto $decade di induttanze$, il quale mette a disposizione 10 induttori variabili in serie. \par
-    Il circuito in questione è il seguente : %figura
-    \par
+    Il circuito in questione è il seguente:\par
+
+    \begin{figure}[!h]
+        \begin{center}
+            \includegraphics[width = 6 cm]{circuito.png}
+            \caption{Circuito RC}
+        \end{center}
+    \end{figure}
+
     Nel primo esperimento è stato dato in ingresso a questa rete un segnale sinusoidale con offset nullo e 
     tensione picco-picco $V^{pp}_{in} = 5V$, di cui però è stata variata la frequenza più volte per ottenere diverse misurazioni
     di ampiezza e sfasamento della tensione d'uscita sul resistore, quindi $\mathbf{V}_R$.
@@ -74,11 +81,18 @@
     resistenze, induttanze e capacità. Dopo aver fornito in ingresso un'onda quadra di tensione picco-picco $V^{pp}_{in} = 2.5 V$
     e offset $V^{of}_{in} = 1.250 V$, è stato valutato l'andamento della tensione ai capi del resistore, al fine 
     di comprendere se il caso risultante fosse sovrasmorzato, sottosmorzato oppure criticamente smorzato. \par
-    
+
     
     \section{Dati sperimentali}
 
     \section{Elaborazione dati}
+    Primo esperimento:
+    \begin{equation}
+        H(j\omega) = \frac{\mathbf{V}_{out}}{\mathbf{V}_{in}}
+        \hspace{0.5cm} dove \hspace{0.5cm} \mathbf{V}_{out} = \mathbf{I} \cdot \mathbf{Z_{R}} = \frac{\mathbf{V_{in}}}{\mathbf{Z_R} + \mathbf{Z_C} + \mathbf{Z_L}}
+        \cdot \mathbf{Z_R}
+        H(j\omega)
+    \end{equation}
 
     \section{Conclusione}
 

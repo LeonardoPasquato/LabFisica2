@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1669646625 "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab3/ThirdReport.tex" "ThirdReport.pdf" "ThirdReport" 1669646625
+["pdflatex"] 1669648161 "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab3/ThirdReport.tex" "ThirdReport.pdf" "ThirdReport" 1669648161
   "/etc/texmf/web2c/texmf.cnf" 1665407763 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/leonardo/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1665431691 11524 7a6021219235086f8bb659cab1e8129a ""
-  "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab3/ThirdReport.tex" 1669646624 3558 0a4e1a1cfb126c52fc87bc6322c03804 ""
+  "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab3/ThirdReport.tex" 1669648160 4051 786e90dbfd5ac9b129dae6a4d2566fee ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -24,11 +24,13 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb" 1248133631 32007 e8fa0078355f39467039935974716569 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1583617216 6501 4011d89d9621e0b0901138815ba5ff29 ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
@@ -60,8 +62,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1665407767 162899 515de6df2324cca4eba6407bef60e07c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1665407773 1435896 3ebeb6e67b217501c8a04a13ea51c99b ""
-  "ThirdReport.aux" 1669646625 752 8ebee015dfe02f4881c04c23f700a025 "pdflatex"
-  "ThirdReport.tex" 1669646624 3558 0a4e1a1cfb126c52fc87bc6322c03804 ""
+  "ThirdReport.aux" 1669648161 873 b62256447c3a7a7e9f5f0a4fd4bc6f47 "pdflatex"
+  "ThirdReport.tex" 1669648160 4051 786e90dbfd5ac9b129dae6a4d2566fee ""
+  "circuito.png" 1669646871 14140 21fda706d72f91043555b3f7561e9183 ""
   (generated)
   "ThirdReport.aux"
   "ThirdReport.log"
