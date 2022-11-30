@@ -226,9 +226,26 @@
             H(j\omega) =  \frac{1}{1+\frac{\mathbf{Z_C}}{\mathbf{Z_R}} + \frac{\mathbf{Z_R}}{\mathbf{Z_C}}}
             = \frac{1}{1+\frac{j}{R} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )} = 
             \frac{1 - \frac{j}{R} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )}{1 + \frac{1}{R^2} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )}
+            \\
+            |H(j\omwga)| = \sqrt{H(j\omega) \cdot \overline{H(j\omega)}} = \frac{1}{1 + \frac{1}{R^2} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )} =
+            \frac{1}{1+\frac{1}{R^2}\cdot\frac{L}{C}\cdot(\frac{\omega}{\omega_0} - \frac{\omega}{\omega})} 
+            \\
+            \phi_{H(j\omega)}(j\omega) = tan^{-1} \Bigl (\frac{Im(H(j\omega))}{Re(H(j\omega))}\Bigr )
+            = tan^{-1} \Bigl (-\frac{1}{R} \cdot (\omega L - \frac{1}{\omega C}) \Bigr )
             %grafici + funzioni di ampiezza e fase
         \end{split}
     \end{equation}
+
+    Pongo $Q^2 = \frac{1}{R} \cdot \frac{L}{C}$ e $\omega_0 = \frac{1}{\sqrt{LC}}$
+
+    \begin{equation}
+        \begin{split}
+            |H(j\omega)| = \frac{1}{1 + Q^2 \cdot (\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega})}
+            \hspace{1cm}
+            \phi_{H(j\omega)}(j\omega) = tan^{-1} \Bigl (-Q \cdot(\frac{\omega}{\omega_0} - \frac{\omega}{\omega_0}) \Bigr )
+        \end{split}
+    \end{equation}
+
 
     Secondo esperimento:
     \begin{equation}
@@ -240,7 +257,9 @@
             \\
             dove \hspace{0.5cm} \frac{R}{2L} = \alpha \hspace{0.5cm} \frac{1}{LC} = \omega_0^2 \hspace{3cm}
             \\
-            \ddot{V_c(t)} + 2\alpha \dot{V_C} + \omega_0 \dot{V_C} \hspace{3cm} = V_S
+            \ddot{V_c(t)} + 2\alpha \dot{V_C} + \omega_0 \dot{V_C} = V_S
+            \\
+            \Delta = 
             %grafici con inviluppo e rispettivi delta
         \end{split}
     \end{equation}
