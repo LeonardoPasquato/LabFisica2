@@ -29,18 +29,22 @@ print(dby)
 #plot magnitude and phase
 mag,phase,omega = control.bode(G,Hz=False,dB=True,deg=False,grid=True)
 
+#points phase
 fx = [100*x, 1000*x, 2000*x, 2500*x, 3000*x, 5000*x, 10000*x, 50000*x]
 fy = [2.68, 0.364, 0.017, 0.011, 0.02, 0.068, 0.0192, 0.0058]
+rady = [1,1,1,1,1,1,1,1]
+for j in range(8):
+    rady[j] = rady[j] * math.atan(-(1/R)*(fx[j]*L - (1/(fx[j]*C)))) - x
 
 ax1 = plt.subplot(211)
-#plt.plot(omega,mag)
 plt.scatter(ax,dby, color = 'red')
 plt.tick_params('x', labelsize=6)
 
 ax2 = plt.subplot(212, sharex=ax1)
 plt.plot(omega,phase)
-plt.scatter(fx,fy)
+plt.scatter(fx,rady, color = 'green')
 
 plt.xlabel('Frequenza angolare')
+plt.ylabel('Phase (rad)')
 plt.xscale('log')
 plt.show()
