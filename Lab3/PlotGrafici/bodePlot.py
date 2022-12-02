@@ -23,7 +23,7 @@ ax = [100*x, 1000*x, 2000*x, 2500*x, 3000*x, 5000*x, 10000*x, 50000*x]
 ay = [0.312, 3, 4.68, 4.78, 4.5, 3.12, 1.62, 0.093]
 dby = [1,1,1,1,1,1,1,1]
 for i in range(8):
-    dby[i] = dby[i]*20 * math.log(ay[i]/5)
+    dby[i] = dby[i] * 20 * math.log10(ay[i]/5)
 
 #plot magnitude and phase
 mag,phase,omega = control.bode(G,Hz=False,dB=True,deg=False,grid=True)
