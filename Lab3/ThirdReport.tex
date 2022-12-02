@@ -227,16 +227,16 @@
             = \frac{1}{1+\frac{j}{R} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )} = 
             \frac{1 - \frac{j}{R} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )}{1 + \frac{1}{R^2} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )}
             \\
-            |H(j\omwga)| = \sqrt{H(j\omega) \cdot \overline{H(j\omega)}} = \frac{1}{1 + \frac{1}{R^2} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )} =
+            |H(j\omega)| = \sqrt{H(j\omega) \cdot \overline{H(j\omega)}} = \frac{1}{1 + \frac{1}{R^2} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )} =
             \frac{1}{1+\frac{1}{R^2}\cdot\frac{L}{C}\cdot(\frac{\omega}{\omega_0} - \frac{\omega}{\omega})} 
             \\
             \phi_{H(j\omega)}(j\omega) = tan^{-1} \Bigl (\frac{Im(H(j\omega))}{Re(H(j\omega))}\Bigr )
-            = tan^{-1} \Bigl (-\frac{1}{R} \cdot (\omega L - \frac{1}{\omega C}) \Bigr )
-            %grafici + funzioni di ampiezza e fase
+            = tan^{-1} \Bigl (-\frac{1}{R} \cdot (\omega L - \frac{1}{\omega C})\Bigr )
         \end{split}
     \end{equation}
 
-    Pongo $Q^2 = \frac{1}{R} \cdot \frac{L}{C}$ e $\omega_0 = \frac{1}{\sqrt{LC}}$
+    Pongo $Q^2 = \frac{1}{R} \cdot \frac{L}{C} = \frac{1}{10000\Omega} \cdot \frac{500 mH}{10 nF} = 5000$ e $\omega_0 = \frac {1}{\sqrt{LC}}
+    = \frac{1}{\sqrt{500mH\cdot10nF}} = 14142\frac{rad}{s}$
 
     \begin{equation}
         \begin{split}
@@ -245,6 +245,13 @@
             \phi_{H(j\omega)}(j\omega) = tan^{-1} \Bigl (-Q \cdot(\frac{\omega}{\omega_0} - \frac{\omega}{\omega_0}) \Bigr )
         \end{split}
     \end{equation}
+
+    \begin{figure}[!h]
+        \begin{center}
+            \includegraphics[width = 12 cm]{bode.png}
+            \caption{Diagramma di Bode}
+        \end{center}
+    \end{figure}
 
 
     Secondo esperimento:
@@ -255,11 +262,11 @@
             V_C + L\frac{dI_L(t)}{dt} + I_R(t)R = V_s \longrightarrow
             \frac{V_C(t)}{LC} + \frac{d^2V_C(t)}{dt^2} + \frac{R}{L} \frac{dV_C(t)}{dt} = V_S
             \\
-            dove \hspace{0.5cm} \frac{R}{2L} = \alpha \hspace{0.5cm} \frac{1}{LC} = \omega_0^2 \hspace{3cm}
+            dove \hspace{0.5cm} \frac{R}{2L} = \alpha = \frac{10000\Omega}{2\cdot 500mH} = 10000 \hspace{0.5cm} \frac{1}{LC} = \omega_0^2 = \frac{1}{500mH \cdot 10nF} = 
             \\
             \ddot{V_c(t)} + 2\alpha \dot{V_C} + \omega_0 \dot{V_C} = V_S
             \\
-            \Delta = 
+            \Delta = \sqrt{4\alpha^2-4\omega_0} < 0 \hspace{2cm} :Caso \hspace{0.2cm} sottosmorzato
             %grafici con inviluppo e rispettivi delta
         \end{split}
     \end{equation}

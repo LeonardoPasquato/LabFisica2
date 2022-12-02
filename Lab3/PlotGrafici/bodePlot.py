@@ -26,6 +26,7 @@ for i in range(8):
     dby[i] = dby[i] * 20 * math.log10(ay[i]/5)
 
 #plot magnitude and phase
+#w = np.logspace(100,1000)
 mag,phase,omega = control.bode(G,Hz=False,dB=True,deg=False,grid=True)
 
 #points phase
@@ -36,15 +37,15 @@ for j in range(8):
     rady[j] = rady[j] * math.atan(-(1/R)*(fx[j]*L - (1/(fx[j]*C))))
 
 ax1 = plt.subplot(211)
-plt.scatter(ax,dby, color = 'red')
+plt.scatter(ax,dby, color = 'red', marker=(5, 2))
 plt.tick_params('x', labelsize=6)
 
 ax2 = plt.subplot(212, sharex=ax1)
 phaseCentered = phase + x
 plt.plot(omega,phaseCentered)
-plt.scatter(fx,rady, color = 'green')
+plt.scatter(fx,rady, color = 'green', marker=(5, 2))
 
-plt.xlabel('Frequenza angolare')
+plt.xlabel('Frequenza angolare (rad/s)')
 plt.ylabel('Phase (rad)')
 plt.xscale('log')
 plt.show()
