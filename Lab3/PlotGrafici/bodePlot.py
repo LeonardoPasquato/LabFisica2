@@ -1,3 +1,7 @@
+#Leonardo Pasquato
+#Bode plot and sperimental misures in the same diagram
+#bastieme
+
 import numpy as np
 import matplotlib.pyplot as plt
 import control
@@ -5,7 +9,7 @@ import math
 import warnings
 warnings.filterwarnings('ignore')
 
-R = math.pow(10,4) 
+R = math.pow(10,3) 
 C = math.pow(10,-8)
 L = 500*math.pow(10,-3)
 
@@ -20,13 +24,13 @@ print(G)
 #points magnitude
 x = 2*math.pi
 ax = [100*x, 1000*x, 2000*x, 2500*x, 3000*x, 5000*x, 10000*x, 50000*x]
-ay = [0.312, 3, 4.68, 4.78, 4.5, 3.12, 1.62, 0.093]
+ay = [0.031, 0.38, 2.24, 2.3, 1.108, 0.396, 0.163, 0.01]
 dby = [1,1,1,1,1,1,1,1]
 for i in range(8):
+    #transform mesures from Volt to deciBel
     dby[i] = dby[i] * 20 * math.log10(ay[i]/5)
 
 #plot magnitude and phase
-#w = np.logspace(100,1000)
 mag,phase,omega = control.bode(G,Hz=False,dB=True,deg=False,grid=True)
 
 #points phase

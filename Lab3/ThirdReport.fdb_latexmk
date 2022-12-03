@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1670005578 "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab3/ThirdReport.tex" "ThirdReport.pdf" "ThirdReport" 1670005578
+["pdflatex"] 1670067564 "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab3/ThirdReport.tex" "ThirdReport.pdf" "ThirdReport" 1670067564
   "/etc/texmf/web2c/texmf.cnf" 1665407763 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/leonardo/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1665431691 11524 7a6021219235086f8bb659cab1e8129a ""
-  "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab3/ThirdReport.tex" 1670005432 11671 54c6d68d9051ca45cb6654444bd3975c ""
+  "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab3/ThirdReport.tex" 1670067563 11771 15b2421778982b167abd8fbfb3e354af ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -79,9 +79,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1665407767 162899 515de6df2324cca4eba6407bef60e07c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1665407773 1435896 3ebeb6e67b217501c8a04a13ea51c99b ""
-  "ThirdReport.aux" 1670005578 1000 342f5b0178734ec61e37676974f8a642 "pdflatex"
-  "ThirdReport.tex" 1670005432 11671 54c6d68d9051ca45cb6654444bd3975c ""
+  "ThirdReport.aux" 1670067564 873 3bb565aad60e92776e6caea3287e0f68 "pdflatex"
+  "ThirdReport.tex" 1670067563 11771 15b2421778982b167abd8fbfb3e354af ""
   "bode.png" 1670005571 28769 7d5a858188ed4550ee8188037bf4880d ""
+  "bode2.png" 1670066793 29556 5f36613f8a5eef7ca4e7e38d84a1820f ""
   "circuito.png" 1669646871 14140 21fda706d72f91043555b3f7561e9183 ""
   (generated)
   "ThirdReport.aux"

@@ -338,6 +338,11 @@ INPUT ./bode.png
 INPUT bode.png
 INPUT ./bode.png
 INPUT ./bode.png
+INPUT ./bode2.png
+INPUT ./bode2.png
+INPUT bode2.png
+INPUT ./bode2.png
+INPUT ./bode2.png
 INPUT ThirdReport.aux
 INPUT /home/leonardo/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
