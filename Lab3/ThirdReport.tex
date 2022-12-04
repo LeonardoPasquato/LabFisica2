@@ -47,9 +47,9 @@
     \section{Scopo dell'esperienza}
     Lo scopo dell'esperienza è quello di studiare e sperimentare con dei circuiti RLC
     (quindi un circuito che ha al suo interno resistenze conduttori e capacitori) e vedere
-    come reagiscono a diverse frequenze e forma d'onda.\par
+    come reagiscono a diverse frequenze e forma d'onda.
     Metteremo poi a confronto i dati reali con quelli teorici per vedere e discutere le possibili incongurenze che potrebbero apparire.\par   
-    Nella prima parte dell'esperienza si sono raccolti dati su due diversi circuiti RLC per permettere di formare due diagramma di Bode.\par
+    Nella prima parte dell'esperienza si sono raccolti dati su due diversi circuiti RLC per permettere di formare due diagrammi di Bode.\par
     Mentre nella seconda parte si esaminerà come la forma funzionale della risposta del circuito varia in funzione di L e C(in
     particolare in relazione alle frequenze naturali del circuito).
 
@@ -59,14 +59,13 @@
     Si ricorda la funzione di trasferimento \par 
     $\left\lvert H(j\omega) \right\rvert = \sqrt{\frac{1}{1 + Q^2(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega} )} } $ \par
     $\phi_H(j\omega) = \arctan \Biggl(-Q\Bigl(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega} \Bigr)\Biggr)$ \par
-    (è la trasformata di fourie della risposta all'impulso)
 
     \section{Strumentazione}
     \begin{itemize}
         \item Breadboard con annessi morsetti serrafilo;
         \item Cavi con connettori a banana e connettori da banco (Jumper);
         \item Resistori di varie misure ($1k\Omega$, $10k\Omega$), capacitori da $1nF$ $10nF$, $100nF$;
-        \item decade di induttanze
+        \item Decade di induttanze
         \item Generatore di forme d'onda Rigol DG1032;
         \item Oscilloscopio Rigol MSO2102A.
     \end{itemize}
@@ -75,7 +74,7 @@
     Nella terza esperienza di laboratorio è stato costruito manualmente un semplice circuito LTI di secondo ordine, ossia
     un circuito composto da generatore di forme d'onda, capacitore, induttore e resistore. Per poter inserire un induttore, è stato utilizzato un dispositivo
     detto \textit{decade di induttanze}, il quale mette a disposizione 10 induttori variabili in serie. \par
-    Il circuito in questione è il seguente:\par
+    Il circuito in questione è il seguente: \textit{Figura 1}\par
 
     \begin{figure}[!h]
         \begin{center}
@@ -86,8 +85,8 @@
 
     Nel primo esperimento è stato dato in ingresso a questa rete un segnale sinusoidale con offset nullo e 
     tensione picco-picco $V^{pp}_{in} = 5V$, di cui però è stata variata la frequenza più volte per ottenere diverse misurazioni
-    di ampiezza e sfasamento della tensione d'uscita sul resistore, quindi $\mathbf{V}_R$.
-    Una volta ottenute le misurazioni è possibile approssimare la funzione di trasferimento sperimentale $H_sp(j\omega)$
+    di ampiezza e sfasamento della tensione d'uscita sul resistore, quindi $\mathbf{V_R}$.
+    Una volta ottenute le misurazioni è possibile approssimare la funzione di trasferimento sperimentale $H_{sp}(j\omega)$
     e confrontarla con la funzione di trasferimento teorica $H(j\omega)$.\par
     È stata ripetuta questa procedura dopo aver sostituito il resistore corrente con uno avente una resistenza
     pari a $1k\Omega$. \par
@@ -138,7 +137,7 @@
                 \hline
                 \textit{Frequenza [Hz]} & \textit{Ampiezza [V]} & \textit{Sfasamento [ms]} \\
                 \hline
-                1 & imp 0 & imp \\
+                1 & imp & imp \\
                 \hline
                 10 & 0.04 & 27.8 \\
                 \hline
@@ -162,25 +161,41 @@
         \end{minipage}
     \end{table}
 
-    Secondo esperimento : \par
-    %$a$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$ \hspace{0.1cm} $c$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$ \hspace{0.1cm} $c$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$
+    Secondo esperimento (valori dei picchi visualizzati sull'oscilloscopio): \par
+    \begin{tabular}{c l}
+        $a$: & $R=10k\Omega$ \\
+        & $L=500mH$ \\
+        & $C=1nF$ \\
+    \end{tabular}
+    \hspace{2.5cm}
+    \begin{tabular}{c l}
+        $b$: & $R=10k\Omega$ \\
+        & $L=500mH$ \\
+        & $C=10nF$ \\
+    \end{tabular}
+    \hspace{2.25cm}
+    \begin{tabular}{c l}
+        $c$: & $R=10k\Omega$ \\
+        & $L=100mH $ \\
+        & $C=10nF$ \\
+    \end{tabular}
     \begin{table} [!ht]
         \begin{minipage}{.34\linewidth}
             %\caption{$a$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$}
             \centering
             \begin{tabular}{|c|c|c|}
                 \hline
-                \textit{Tensione [V]} & \textit{Sfasamento [ms]} \\
+                \textit{Tensione [V]} & \textit{Tempo [$\mu s$]} \\
                 \hline
-                0.8 & 0.0032 \\
+                0.8 & 32 \\
                 \hline
-                0.36 & 0.0098 \\
+                0.36 & 98 \\
                 \hline
-                0.2 & 0.0172 \\
+                0.2 & 172 \\
                 \hline
-                0.06 & 0.0238 \\
+                0.06 & 238 \\
                 \hline
-                0.06 & 0.0312 \\
+                0.06 & 312 \\
                 \hline
             \end{tabular}
         \end{minipage}
@@ -189,9 +204,9 @@
             \centering
             \begin{tabular}{|c|c|}
                 \hline
-                \textit{Tensione [V]} & \textit{Sfasamento [ms]} \\
+                \textit{Tensione [V]} & \textit{Tempo [$\mu s$]} \\
                 \hline
-                1.6 & 0.0078 \\            
+                1.6 & 78 \\            
                 \hline
             \end{tabular}
         \end{minipage}
@@ -200,15 +215,9 @@
             \centering
             \begin{tabular}{|c|c|}
                 \hline
-                \textit{Ampiezza [V]} & \textit{Sfasamento [ms]} \\
+                \textit{Ampiezza [V]} & \textit{Tempo [$\mu s$]} \\
                 \hline
-                2.160 & 0.0024 \\
-                \hline
-                1.88 & 0.0048 \\
-                \hline
-                1.24 & 0.0086 \\
-                \hline
-                0.8 & 0.0132 \\            
+                2.160 & 24 \\         
                 \hline
             \end{tabular}
         \end{minipage}
@@ -282,5 +291,6 @@
     \end{math}
 
     \section{Conclusione}
-
+    Possiamo notare nel primo esperimento che i punti si sovrappongono quasi perfettamente al diagramma di Bode teorico.\par
+    Mentre nel secondo esperimento (trovare la frequenza di oscillazione)
 \end{document}
