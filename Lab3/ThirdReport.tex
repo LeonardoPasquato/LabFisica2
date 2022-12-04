@@ -74,7 +74,7 @@
     \section{Esperimento}
     Nella terza esperienza di laboratorio è stato costruito manualmente un semplice circuito LTI di secondo ordine, ossia
     un circuito composto da generatore di forme d'onda, capacitore, induttore e resistore. Per poter inserire un induttore, è stato utilizzato un dispositivo
-    detto $decade di induttanze$, il quale mette a disposizione 10 induttori variabili in serie. \par
+    detto \textit{decade di induttanze}, il quale mette a disposizione 10 induttori variabili in serie. \par
     Il circuito in questione è il seguente:\par
 
     \begin{figure}[!h]
@@ -256,22 +256,30 @@
         \end{minipage}
     \end{figure}
 
-    Secondo esperimento:
-    \begin{equation}
-        \begin{split}
-            KVL \longrightarrow V_C + V_L + V_R = V_s \hspace{3cm}
-            \\
-            V_C + L\frac{dI_L(t)}{dt} + I_R(t)R = V_s \longrightarrow
-            \frac{V_C(t)}{LC} + \frac{d^2V_C(t)}{dt^2} + \frac{R}{L} \frac{dV_C(t)}{dt} = V_S
-            \\
-            dove \hspace{0.5cm} \frac{R}{2L} = \alpha = \frac{10000\Omega}{2\cdot 500mH} = 10000 \hspace{0.5cm} \frac{1}{LC} = \omega_0^2 = \frac{1}{500mH \cdot 10nF} = 
-            \\
-            \ddot{V_c(t)} + 2\alpha \dot{V_C} + \omega_0 \dot{V_C} = V_S
-            \\
-            \Delta = \sqrt{4\alpha^2-4\omega_0} < 0 \hspace{2cm} :Caso \hspace{0.2cm} sottosmorzato
-            %grafici con inviluppo e rispettivi delta
-        \end{split}
-    \end{equation}
+    Secondo esperimento: \par
+    \begin{math}
+        KCL: I(t) = I_C(t) = I_L(t) = I_R(t) \\
+        KVL: V_C(t) + V_L(t) + V_R(t) = V_S(t) \\
+        \\
+        V_C(t) + L\frac{dI_L(t)}{dt} + I_R(t)R = V_S(t) \hspace{1cm} I_C(t) = C\frac{dV_C(t)}{dt} \\
+        \\
+        V_C(t) + LC\frac{d^2V_C(t)}{dt^2} + RC\frac{dV_C(t)}{dt} = V_S(t) \\
+        \\
+        \ddot{V_C(t)} + \frac{R}{L}\dot{V_C(t)} +\frac{1}{LC}V_C(t) = \frac{V_S(t)}{LC} \\
+        \\
+        \ddot{V_C(t)} + 2\alpha \dot{V_C(t)} + {\omega_0}^2 V_C = 0 \\
+        dove \hspace{0.5cm} \alpha = \frac{R}{2L} \hspace{0.5cm} \omega_0 = \frac{1}{\sqrt{LC}} \\
+        \\
+        \textit{Caso 1:} \hspace{0.5cm} R = 10K\Omega \hspace{0.5cm} L = 500mH \hspace{0.5cm} C = 1nF \\
+        \alpha < \omega_0 \hspace{0.5cm} \textit{Caso sottosmorzato} \\
+        \\
+        \textit{Caso 2:} \hspace{0.5cm} R = 10K\Omega \hspace{0.5cm} L = 500mH \hspace{0.5cm} C = 10nF \\
+        \alpha < \omega_0 \hspace{0.5cm} \textit{Caso sottosmorzato} \\
+        \\
+        \textit{Caso 3:} \hspace{0.5cm} R = 10K\Omega \hspace{0.5cm} L = 100mH \hspace{0.5cm} C = 10nF \\
+        \alpha > \omega_0 \hspace{0.5cm} \textit{Caso sovrasmorzato} \\
+        \\
+    \end{math}
 
     \section{Conclusione}
 
