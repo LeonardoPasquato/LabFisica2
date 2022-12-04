@@ -260,8 +260,9 @@
         \end{split}
     \end{equation}
 
-    Pongo $Q^2 = \frac{1}{R} \cdot \frac{L}{C} = \frac{1}{10000\Omega} \cdot \frac{500 mH}{10 nF} = 5000$ e $\omega_0 = \frac {1}{\sqrt{LC}}
-    = \frac{1}{\sqrt{500mH\cdot10nF}} = 14142\frac{rad}{s}$
+    \begin{center}
+    Pongo $Q^2 = \frac{1}{R} \cdot \frac{L}{C}$ e $\omega_0 = \frac {1}{\sqrt{LC}}$
+    \end{center}
 
     \begin{equation}
         \begin{split}
@@ -275,8 +276,9 @@
         \includegraphics[width = 16 cm]{bodetotale.png}
     \end{figure}
 
+    \newpage
     Secondo esperimento: \par
-
+    \begin{minipage}{.34\linewidth}
     \begin{math}
         KCL: I(t) = I_C(t) = I_L(t) = I_R(t) \\
         KVL: V_C(t) + V_L(t) + V_R(t) = V_S(t) \\
@@ -300,6 +302,15 @@
         \alpha > \omega_0 \hspace{0.5cm} \textit{Caso sovrasmorzato} \\
         \\
     \end{math}
+    \end{minipage}
+    \hspace{0.5 cm}
+    \begin{minipage}{.4\linewidth}
+        \hspace{0.5 cm}
+        Primo caso : \par
+        \includegraphics[width = 9 cm]{secondoese.png}
+        \par
+        \hspace{0.5 cm} Dove \color{blue} $V_R(t) = Ae^{-\alpha t} cos(\omega_d t + \phi)$
+    \end{minipage}
 
     \section{Conclusione}
     Possiamo notare nel primo esperimento che i punti si sovrappongono quasi perfettamente al diagramma di Bode teorico.\par

@@ -30,7 +30,7 @@ plt.scatter(px,py, marker = (5, 2), color = 'green')
 plt.plot(xa, ya, '--r')
 plt.plot(xa, ytot)
 plt.xlabel('$Tempo (ms)$')
-plt.ylabel('$Tensione ai capi di R (V)$')
+plt.ylabel('$V_R (V)$')
 
 #plot axis
 axx = np.linspace(0., 0.032, 1000)

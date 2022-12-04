@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1670183740 "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab3/ThirdReport.tex" "ThirdReport.pdf" "ThirdReport" 1670183741
+["pdflatex"] 1670186391 "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab3/ThirdReport.tex" "ThirdReport.pdf" "ThirdReport" 1670186391
   "/etc/texmf/web2c/texmf.cnf" 1665407763 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/leonardo/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1665431691 11524 7a6021219235086f8bb659cab1e8129a ""
-  "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab3/ThirdReport.tex" 1670183735 13133 b7b930d1fba758de9207c5448bfc501f ""
+  "/home/leonardo/Desktop/Workspace/Unitn22-23/LabFisica2/Lab3/ThirdReport.tex" 1670186390 13402 2b7a815d44891dbcbc80126111604940 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -80,10 +80,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1665407767 162899 515de6df2324cca4eba6407bef60e07c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1665407773 1435896 3ebeb6e67b217501c8a04a13ea51c99b ""
-  "ThirdReport.aux" 1670183741 873 008ee297931df41c8b9fad5348f74191 "pdflatex"
-  "ThirdReport.tex" 1670183735 13133 b7b930d1fba758de9207c5448bfc501f ""
+  "ThirdReport.aux" 1670186391 873 008ee297931df41c8b9fad5348f74191 "pdflatex"
+  "ThirdReport.tex" 1670186390 13402 2b7a815d44891dbcbc80126111604940 ""
   "bodetotale.png" 1670156676 69906 8e120e6c193b75e7671b035340005eb8 ""
   "circuito.png" 1669646871 14140 21fda706d72f91043555b3f7561e9183 ""
+  "secondoese.png" 1670185435 30034 7afd8b2dbab402dc330a84c3241e62ec ""
   (generated)
   "ThirdReport.aux"
   "ThirdReport.log"

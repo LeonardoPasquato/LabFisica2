@@ -340,6 +340,11 @@ INPUT ./bodetotale.png
 INPUT ./bodetotale.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
+INPUT ./secondoese.png
+INPUT ./secondoese.png
+INPUT secondoese.png
+INPUT ./secondoese.png
+INPUT ./secondoese.png
 INPUT ThirdReport.aux
 INPUT /home/leonardo/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
