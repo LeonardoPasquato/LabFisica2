@@ -54,19 +54,16 @@
     particolare in relazione alle frequenze naturali del circuito).
 
     \section{Cenni teorici}
-<<<<<<< HEAD
     Un diagramma di Bode consiste nella rappresentazione con due grafici della risposta in frequenza di un sistema LTI, 
     uno per il modulo mentre l'altro per la fase.
     Si ricorda la funzione di trasferimento \par 
     $\left\lvert H(j\omega) \right\rvert = \sqrt{\frac{1}{1 + Q^2(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega} )} } $ \par
     $\phi_H(j\omega) = \arctan \Biggl(-Q\Bigl(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega} \Bigr)\Biggr)$ \par
-=======
     Un diagramma di Bode consiste nella rappresentazione di due grafici mostranti la risposta in frequenza di un sistema LTI, 
     uno per l'ampienzza e l'altro per la fase.
     Si ricorda la funzione di trasferimento come $H(j\omega) = \frac{\mathbf{V_{out}}}{\mathbf{V_{in}}}$, dove:\par 
     $\left\lvert H(j\omega) \right\rvert = \sqrt{H(j\omega) \cdot \overline{H(j\omega)}} $\par
     $\phi_{H(j\omega)}(j\omega) = \arctan \bigl(\frac{Im(H(j\omega))}{Re(H(j\omega))} \bigr)$ \par
->>>>>>> 467b00aafae07858ab9ab01d8dec63d686e52bfc
 
     \section{Strumentazione}
     \begin{itemize}
@@ -77,6 +74,8 @@
         \item Generatore di forme d'onda Rigol DG1032;
         \item Oscilloscopio Rigol MSO2102A.
     \end{itemize}
+
+    \newpage
 
     \section{Esperimento}
     Nella terza esperienza di laboratorio è stato costruito manualmente un semplice circuito LTI di secondo ordine, ossia
@@ -169,7 +168,6 @@
         \end{minipage}
     \end{table}
 
-<<<<<<< HEAD
     Secondo esperimento (valori dei picchi visualizzati sull'oscilloscopio): \par
     \begin{tabular}{c l}
         $a$: & $R=10k\Omega$ \\
@@ -188,11 +186,9 @@
         & $L=100mH $ \\
         & $C=10nF$ \\
     \end{tabular}
-=======
-    Secondo esperimento : \par
+
     %px = [0.0032, 0.0081, 0.0151, 0.023, 0.0312]
     %$a$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$ \hspace{0.1cm} $c$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$ \hspace{0.1cm} $c$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$
->>>>>>> 467b00aafae07858ab9ab01d8dec63d686e52bfc
     \begin{table} [!ht]
         \begin{minipage}{.34\linewidth}
             %\caption{$a$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$}
@@ -203,19 +199,11 @@
                 \hline
                 0.8 & 32 \\
                 \hline
-<<<<<<< HEAD
                 0.36 & 98 \\
                 \hline
                 0.2 & 172 \\
                 \hline
                 0.06 & 238 \\
-=======
-                0.36 & 0.0081 \\
-                \hline
-                0.2 & 0.0151 \\
-                \hline
-                0.06 & 0.023 \\
->>>>>>> 467b00aafae07858ab9ab01d8dec63d686e52bfc
                 \hline
                 0.06 & 312 \\
                 \hline
@@ -239,7 +227,13 @@
                 \hline
                 \textit{Ampiezza [V]} & \textit{Tempo [$\mu s$]} \\
                 \hline
-                2.160 & 24 \\         
+                2.160 & 24 \\ 
+                \hline
+                1.88 & 48 \\
+                \hline
+                1.24 & 86 \\
+                \hline
+                0.8 & 132 \\         
                 \hline
             \end{tabular}
         \end{minipage}

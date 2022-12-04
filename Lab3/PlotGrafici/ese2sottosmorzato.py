@@ -16,21 +16,21 @@ omegad = math.sqrt(omegazero2 - math.pow(alpha, 2))
 B1 = 2.5
 B2 = (alpha * B1) / (omegad)
 
-px = [0.0032, 0.0081, 0.0151, 0.023, 0.0312]
+px = [0.0032, 0.0098, 0.0172, 0.0238, 0.0312]
 py = [0.8, -0.36, 0.2, -0.06, 0.06]
 
 x = np.linspace(0., 0.032, 1000)
 xa = x
-ya = 2.5 * np.exp(-100*xa)
+ya = np.exp(-alpha*xa)
 
-ytot = ya * np.cos(43588 * (xa / 100) -0.13)
+ytot = ya * np.cos(43588 * (xa/100) - (math.pi / 2))
 
 plt.figure()
 plt.scatter(px,py, marker = (5, 2), color = 'green')
 plt.plot(xa, ya, '--r')
 plt.plot(xa, ytot)
-plt.xlabel('$x$')
-plt.ylabel('$\exp(x)$')
+plt.xlabel('$Tempo (ms)$')
+plt.ylabel('$Tensione ai capi di R (V)$')
 
 #plot axis
 axx = np.linspace(0., 0.032, 1000)
