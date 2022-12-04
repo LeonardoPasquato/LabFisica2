@@ -54,12 +54,11 @@
     particolare in relazione alle frequenze naturali del circuito).
 
     \section{Cenni teorici}
-    Un diagramma di Bode consiste nella rappresentazione con due grafici della risposta in frequenza di un sistema LTI, 
-    uno per il modulo mentre l'altro per la fase.
-    Si ricorda la funzione di trasferimento \par 
-    $\left\lvert H(j\omega) \right\rvert = \sqrt{\frac{1}{1 + Q^2(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega} )} } $ \par
-    $\phi_H(j\omega) = \arctan \Biggl(-Q\Bigl(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega} \Bigr)\Biggr)$ \par
-    (è la trasformata di fourie della risposta all'impulso)
+    Un diagramma di Bode consiste nella rappresentazione di due grafici mostranti la risposta in frequenza di un sistema LTI, 
+    uno per l'ampienzza e l'altro per la fase.
+    Si ricorda la funzione di trasferimento come $H(j\omega) = \frac{\mathbf{V_{out}}}{\mathbf{V_{in}}}$, dove:\par 
+    $\left\lvert H(j\omega) \right\rvert = \sqrt{H(j\omega) \cdot \overline{H(j\omega)}} $\par
+    $\phi_{H(j\omega)}(j\omega) = \arctan \bigl(\frac{Im(H(j\omega))}{Re(H(j\omega))} \bigr)$ \par
 
     \section{Strumentazione}
     \begin{itemize}
@@ -163,6 +162,7 @@
     \end{table}
 
     Secondo esperimento : \par
+    %px = [0.0032, 0.0081, 0.0151, 0.023, 0.0312]
     %$a$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$ \hspace{0.1cm} $c$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$ \hspace{0.1cm} $c$: $R = 10k\Omega$,$L = 500mH $,$C = 10nF$
     \begin{table} [!ht]
         \begin{minipage}{.34\linewidth}
@@ -174,11 +174,11 @@
                 \hline
                 0.8 & 0.0032 \\
                 \hline
-                0.36 & 0.0098 \\
+                0.36 & 0.0081 \\
                 \hline
-                0.2 & 0.0172 \\
+                0.2 & 0.0151 \\
                 \hline
-                0.06 & 0.0238 \\
+                0.06 & 0.023 \\
                 \hline
                 0.06 & 0.0312 \\
                 \hline
@@ -247,16 +247,11 @@
     \end{equation}
 
     \begin{figure}[!h]
-        \begin{minipage}[b]{9cm}
-            \includegraphics[width=9cm]{bode.png}
-        \end{minipage}
-            \hspace{2mm}
-        \begin{minipage}[b]{0.2cm}
-            \includegraphics[width=9cm]{bode2.png}
-        \end{minipage}
+        \includegraphics[width = 16 cm]{bodetotale.png}
     \end{figure}
 
     Secondo esperimento: \par
+
     \begin{math}
         KCL: I(t) = I_C(t) = I_L(t) = I_R(t) \\
         KVL: V_C(t) + V_L(t) + V_R(t) = V_S(t) \\
