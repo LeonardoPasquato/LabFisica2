@@ -34,7 +34,7 @@
 %c'è 1 inch di margine a destra e sinistra
 \geometry{margin = 0.9 in}
 
-\title{ Relazione terza esperienza di laboratorio Fisica 2}
+\title{\huge Relazione terza esperienza di laboratorio Fisica 2}
 \author{Gruppo A15: Armani Stefano, Cappellaro Nicola, Pasquato Leonardo}
 \date{07-11-2022}
 \setlength{\parindent}{0cm}
@@ -248,10 +248,11 @@
             \frac{1 - \frac{j}{R} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )}{1 + \frac{1}{R^2} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )}
             \\
             |H(j\omega)| = \sqrt{H(j\omega) \cdot \overline{H(j\omega)}} = \frac{1}{1 + \frac{1}{R^2} \cdot \bigl (\omega L - \frac{1}{\omega C} \bigr )} =
-            \frac{1}{1+\frac{1}{R^2}\cdot\frac{L}{C}\cdot(\frac{\omega}{\omega_0} - \frac{\omega}{\omega})} 
+            \frac{1}{1+\frac{1}{R^2}\cdot \sqrt{\frac{L}{C}}\cdot(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega})} 
             \\
             \phi_{H(j\omega)}(j\omega) = tan^{-1} \Bigl (\frac{Im(H(j\omega))}{Re(H(j\omega))}\Bigr )
             = tan^{-1} \Bigl (-\frac{1}{R} \cdot (\omega L - \frac{1}{\omega C})\Bigr )
+            = tan^{-1} \bigl (-\frac{1}{R} \cdot \sqrt{\frac{L}{C}} \cdot (\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}) \bigr )
         \end{split}
     \end{equation}
 
@@ -273,12 +274,12 @@
     \end{minipage}
     \begin{minipage}{.4\linewidth}
         Primo caso:\par
-        $Q^2=\frac{1}{10k\Omega} \cdot \frac{500mH}{10nF} = $ \par
-        $\omega_0 = \frac{1}{\sqrt{500mH\cdot 10nF}}$ = 
+        $Q^2=\frac{1}{10k\Omega} \cdot \frac{500mH}{10nF} = 5\cdot10^{-13}$ \par
+        $\omega_0^2 = \frac{1}{500mH\cdot 10nF} = 2 \cdot 10^{8} \frac{rad}{s}$
         \\ \par
         Secondo caso:\par
-        $Q^2=\frac{1}{1k\Omega} \cdot \frac{500mH}{10nF} = $ \par
-        $\omega_0 = \frac{1}{\sqrt{500mH \cdot 10nF}}$ = 
+        $Q^2=\frac{1}{1k\Omega} \cdot \frac{500mH}{10nF} = 5\cdot10^{-12}$ \par
+        $\omega_0^2 = \frac{1}{500mH \cdot 10nF} = 2\cdot 10^{8} \frac{rad}{s}$ 
     \end{minipage}
 
     \newpage
