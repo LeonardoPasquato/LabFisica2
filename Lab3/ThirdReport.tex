@@ -45,12 +45,12 @@
     \rule{\linewidth}{0.1mm}
 
     \section{Scopo dell'esperienza}
-    Lo scopo dell'esperienza è quello di studiare e sperimentare con dei circuiti RLC
-    (quindi un circuito che ha al suo interno resistenze conduttori e capacitori) e vedere
-    come reagiscono a diverse frequenze e forma d'onda.
-    Metteremo poi a confronto i dati reali con quelli teorici per vedere e discutere le possibili incongurenze che potrebbero apparire.\par   
+    Lo scopo della terza esperienza di laboratorio è stato di studiare, costruire dei circuiti RLC
+    (quindi un circuito che ha al suo interno resistenze conduttori e capacitori) e studiare la loro 
+    risposta a diverse frequenze e forma d'onda. \par
+    Saranno poi le misurazioni sperimentali ad essere messe a confronto con quelli teorici per valutare e discutere le possibili incongurenze che potrebbero apparire.\par   
     Nella prima parte dell'esperienza si sono raccolti dati su due diversi circuiti RLC per permettere di formare due diagrammi di Bode.\par
-    Mentre nella seconda parte si esaminerà come la forma funzionale della risposta del circuito varia in funzione di L e C(in
+    Nella seconda parte invece si esaminerà come la forma funzionale della risposta del circuito varia in funzione di L e C(in
     particolare in relazione alle frequenze naturali del circuito).
 
     \section{Cenni teorici}
@@ -59,6 +59,9 @@
     Si ricorda la funzione di trasferimento come $H(j\omega) = \frac{\mathbf{V_{out}}}{\mathbf{V_{in}}}$, dove:\par 
     $\left\lvert H(j\omega) \right\rvert = \sqrt{H(j\omega) \cdot \overline{H(j\omega)}} $\par
     $\phi_{H(j\omega)}(j\omega) = \arctan \bigl(\frac{Im(H(j\omega))}{Re(H(j\omega))} \bigr)$ \par
+    La funzione di trasferimento risulta inoltre essere la trasformata di Fourier della risposta impulsiva al circuito.
+    \par I circuiti studiati durante l'esperienza di laboratorio sono circuiti RLC del secondo ordine, dunque la loro risposta può
+    ricadere in uno dei 3 seguenti casi: caso sottosmorzato, caso sovrasmorzato e caso criticamente smorzato.
 
     \section{Strumentazione}
     \begin{itemize}
@@ -76,7 +79,7 @@
     Nella terza esperienza di laboratorio è stato costruito manualmente un semplice circuito LTI di secondo ordine, ossia
     un circuito composto da generatore di forme d'onda, capacitore, induttore e resistore. Per poter inserire un induttore, è stato utilizzato un dispositivo
     detto \textit{decade di induttanze}, il quale mette a disposizione 10 induttori variabili in serie. \par
-    Il circuito in questione è il seguente: \textit{Figura 1}\par
+    Il circuito in questione è il seguente:
 
     \begin{figure}[!h]
         \begin{center}
@@ -87,15 +90,16 @@
 
     Nel primo esperimento è stato dato in ingresso a questa rete un segnale sinusoidale con offset nullo e 
     tensione picco-picco $V^{pp}_{in} = 5V$, di cui però è stata variata la frequenza più volte per ottenere diverse misurazioni
-    di ampiezza e sfasamento della tensione d'uscita sul resistore, quindi $\mathbf{V_R}$.
-    Una volta ottenute le misurazioni è possibile approssimare la funzione di trasferimento sperimentale $H_{sp}(j\omega)$
-    e confrontarla con la funzione di trasferimento teorica $H(j\omega)$.\par
+    di ampiezza e sfasamento della tensione d'uscita ai capi del resistore, quindi $\mathbf{V_R}$. Una volte ottenute diverse
+    misurazioni dell'ampiezza e sfasamento in funzione della frequenza angolare, sarà possibile confrontare questi dati sperimentali
+    con l'andamento teorico della funzione di trasferimento.
     È stata ripetuta questa procedura dopo aver sostituito il resistore corrente con uno avente una resistenza
     pari a $1k\Omega$. \par
     Durante il secondo esperimento è stato utilizzato lo stesso circuito, di cui sono state utilizzate 3 terne di valori di
     resistenze, induttanze e capacità. Dopo aver fornito in ingresso un'onda quadra di tensione picco-picco $V^{pp}_{in} = 2.5 V$
     e offset $V^{of}_{in} = 1.250 V$, è stato valutato l'andamento della tensione ai capi del resistore, al fine 
-    di comprendere se il caso risultante fosse sovrasmorzato, sottosmorzato oppure criticamente smorzato. \par
+    di comprendere se il caso risultante fosse sovrasmorzato, sottosmorzato oppure criticamente smorzato e se la frequenza angolare libera $\omega_{d_{sp}}$
+    coincidesse con quella teorica $\omega_d$. \par
 
     
     \section{Dati sperimentali}
@@ -284,12 +288,12 @@
 
     \newpage
     Secondo esperimento: \par
-    \begin{minipage}{.34\linewidth}
+    \begin{minipage}{.41\linewidth}
     \begin{math}
         KCL: I(t) = I_C(t) = I_L(t) = I_R(t) \\
         KVL: V_C(t) + V_L(t) + V_R(t) = V_S(t) \\
         \\
-        V_C(t) + L\frac{dI_L(t)}{dt} + I_R(t)R = V_S(t) \hspace{1cm} I_C(t) = C\frac{dV_C(t)}{dt} \\
+        V_C(t) + L\frac{dI_L(t)}{dt} + I_R(t)R = V_S(t) \\ \hspace{0.25 cm} dove \hspace{0.25 cm} I_C(t) = C\frac{dV_C(t)}{dt} \\
         \\
         V_C(t) + LC\frac{d^2V_C(t)}{dt^2} + RC\frac{dV_C(t)}{dt} = V_S(t) \\
         \\
@@ -298,13 +302,13 @@
         \ddot{V_C(t)} + 2\alpha \dot{V_C(t)} + {\omega_0}^2 V_C = 0 \\
         dove \hspace{0.5cm} \alpha = \frac{R}{2L} \hspace{0.5cm} \omega_0 = \frac{1}{\sqrt{LC}} \\
         \\
-        \textit{Caso 1:} \hspace{0.5cm} R = 10K\Omega \hspace{0.5cm} L = 500mH \hspace{0.5cm} C = 1nF \\
+        \textit{Caso 1:} \\ R = 10K\Omega \hspace{0.5cm} L = 500mH \hspace{0.5cm} C = 1nF \\
         \alpha < \omega_0 \hspace{0.5cm} \textit{Caso sottosmorzato} \\
         \\
-        \textit{Caso 2:} \hspace{0.5cm} R = 10K\Omega \hspace{0.5cm} L = 500mH \hspace{0.5cm} C = 10nF \\
+        \textit{Caso 2:} \\ R = 10K\Omega \hspace{0.5cm} L = 500mH \hspace{0.5cm} C = 10nF \\
         \alpha < \omega_0 \hspace{0.5cm} \textit{Caso sottosmorzato} \\
         \\
-        \textit{Caso 3:} \hspace{0.5cm} R = 10K\Omega \hspace{0.5cm} L = 100mH \hspace{0.5cm} C = 10nF \\
+        \textit{Caso 3:} \\ R = 10K\Omega \hspace{0.5cm} L = 100mH \hspace{0.5cm} C = 10nF \\
         \alpha > \omega_0 \hspace{0.5cm} \textit{Caso sovrasmorzato} \\
         \\
     \end{math}
@@ -319,17 +323,17 @@
     \end{minipage}
 
     \section{Conclusione}
-    Guardando ai dati del primo esperimento si può notare che i punti reali presi in laboratorio si sovrappongono quasi perfettamente
+    Studiando i dati del primo esperimento si può notare che i dati sperimentali presi in laboratorio si sovrappongono quasi perfettamente
     al diagramma di Bode teorico. È possibile affermare che il comportamento del circuito è coerente con le aspettative. \par
-    Dopo aver calcolato i dati del secondo esperimento si ha che sia il primo che il secondo caso sono sottosmorzati
-    mentre il terzo è l'unico sovrasmorzato.
-    La nostra forma funzionale non varia tanto per $\omega_0$ ma più per $\omega_d$, che è dato da ${\sqrt{{\omega_0}^{2}-\alpha^{2}}}$.
-    Al variare di L e di C si ha una diversa frequenza di risonanza, ovvero $\omega_0$, che fa si che siano presenti
-    diverse frequenze di oscillazione.
-    Dalle misurazioni effettuate si può vedere qual è il periodo del primo caso, lo si ottiene sottraendo il tempo del secondo picco positivo 
-    al tempo del primo picco positivo. $172 \mu s - 32 \mu s = 140 \mu s$ \par
-    Da questo calcoliamo la frequenza sperimantale che è
-    $\frac{2\pi}{T} \simeq 44879.90 rad/s$ e la si confronta con la frequenza libera teorica $\omega_d \simeq 43588.99 rad/s$ \par
-    Si può quindi affermare che i valori ottenuti sono simili con una differenza tra teorico e sperimentale.
+    Nel secondo esperimento, sono stati studiati sperimentalmente e teoricamente i 3 circuiti: è risultato che i primi due ricadessero
+    in un caso sottosmorzato, mentre il terzo in un caso sovrasmorzato.\par
+    Nei 3 casi la frequenza angolare libera $\omega_d$ varia a causa delle diverse terne di valori per resistenze, induttanze e capacità:
+    essendo $\omega_d = \sqrt{\omega_0^2 - \alpha^2}$, a parità di valore della resistenza (componente dissipativo che "strozza" l'andamento teorico senza perdite di un circuito LC),
+    si hanno frequenze angolari diverse dovute dai diversi valori di L e C, dunque diversi casi. \par
+    In particolare nel primo caso, si può confrontare la frequenza angolare libera teorica con quella sperimentale: è possibile ottenere il periodo di oscillazione sottraendo il tempo del secondo picco positivo 
+    al tempo del primo picco positivo.  $T_{sp} = 172 \mu s - 32 \mu s = 140 \mu s$ \par
+    Da questo è possibile calcolare la frequenza angolare libera sperimantale che risulta essere pari a: \par
+    $\omega_{d_{sp}} = \frac{2\pi}{T} = 44879.90 rad/s$ e la si confronta con la frequenza libera teorica $\omega_d = 43588.99 rad/s$ \par
+    Il valore sperimentale risulta essere prossimo a quello teorico, dunque i risultati sperimentali possono essere considerati validi.
     
 \end{document}
