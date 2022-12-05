@@ -54,11 +54,6 @@
     particolare in relazione alle frequenze naturali del circuito).
 
     \section{Cenni teorici}
-    Un diagramma di Bode consiste nella rappresentazione con due grafici della risposta in frequenza di un sistema LTI, 
-    uno per il modulo mentre l'altro per la fase.
-    Si ricorda la funzione di trasferimento \par 
-    $\left\lvert H(j\omega) \right\rvert = \sqrt{\frac{1}{1 + Q^2(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega} )} } $ \par
-    $\phi_H(j\omega) = \arctan \Biggl(-Q\Bigl(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega} \Bigr)\Biggr)$ \par
     Un diagramma di Bode consiste nella rappresentazione di due grafici mostranti la risposta in frequenza di un sistema LTI, 
     uno per l'ampienzza e l'altro per la fase.
     Si ricorda la funzione di trasferimento come $H(j\omega) = \frac{\mathbf{V_{out}}}{\mathbf{V_{in}}}$, dove:\par 
@@ -272,9 +267,19 @@
         \end{split}
     \end{equation}
 
-    \begin{figure}[!h]
-        \includegraphics[width = 16 cm]{bodetotale.png}
-    \end{figure}
+    \begin{minipage}{.625\linewidth}
+        \includegraphics[width = 10.5 cm]{bode.png}
+        \includegraphics[width = 10.5 cm]{bode2.png}
+    \end{minipage}
+    \begin{minipage}{.4\linewidth}
+        Primo caso:\par
+        $Q^2=\frac{1}{10k\Omega} \cdot \frac{500mH}{10nF} = $ \par
+        $\omega_0 = \frac{1}{\sqrt{500mH\cdot 10nF}}$ = 
+        \\ \par
+        Secondo caso:\par
+        $Q^2=\frac{1}{1k\Omega} \cdot \frac{500mH}{10nF} = $ \par
+        $\omega_0 = \frac{1}{\sqrt{500mH \cdot 10nF}}$ = 
+    \end{minipage}
 
     \newpage
     Secondo esperimento: \par
