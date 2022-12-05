@@ -167,7 +167,7 @@
         \end{minipage}
     \end{table}
 
-    Secondo esperimento (valori dei picchi visualizzati sull'oscilloscopio): \par
+    Secondo esperimento (valori di tensione dei picchi, tranne nel caso $c$ in cui non sono presenti picchi): \par
     \begin{tabular}{c l}
         $a$: & $R=10k\Omega$ \\
         & $L=500mH$ \\
@@ -227,12 +227,12 @@
                 \textit{Tensione [V]} & \textit{Tempo [$\mu s$]} \\
                 \hline
                 2.160 & 24 \\ 
-                %\hline
-                %1.88 & 48 \\
-                %\hline
-                %1.24 & 86 \\
-                %\hline
-                %0.8 & 132 \\         
+                \hline
+                1.88 & 48 \\
+                \hline
+                1.24 & 86 \\
+                \hline
+                0.8 & 132 \\         
                 \hline
             \end{tabular}
         \end{minipage}
@@ -284,6 +284,13 @@
         Secondo caso:\par
         $Q^2=\frac{1}{1k\Omega} \cdot \frac{500mH}{10nF} = 5\cdot10^{-12}$ \par
         $\omega_0^2 = \frac{1}{500mH \cdot 10nF} = 2\cdot 10^{8} \frac{rad}{s}$ 
+        \\ \par
+        Legenda: \par
+        \begin{itemize}
+            \color{blue} \item  Grafico teorico di Bode;
+            \color{red} \item Valori sperimentali di ampiezza;
+            \color{green} \item Valori sperimentali di sfasamento.
+        \end{itemize}
     \end{minipage}
 
     \newpage
@@ -319,7 +326,12 @@
         Primo caso : \par
         \includegraphics[width = 9 cm]{secondoese.png}
         \par
-        \hspace{0.5 cm} Dove \color{blue} $V_R(t) = Ae^{-\alpha t} cos(\omega_d t + \phi)$
+        \hspace{0.5 cm} \begin{itemize}
+            \color{blue} \item $V_R(t) = Ae^{-\alpha t} cos(\omega_d t + \phi)$;
+            \color{red} \item inviluppo teorico = $e^{-\alpha t}$;
+            \color{green} \item valori sperimentali di tensione misurati nei picchi.
+        \end{itemize}
+
     \end{minipage}
 
     \section{Conclusione}
